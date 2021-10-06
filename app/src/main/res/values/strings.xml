@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Emmy_iBook</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="onboarding_text">Reading is a conversation. All books talk but a good book listens as well.</string>
+    <string name="get_started">Get Started</string>
+    <string name="sign_in">Sign In</string>
+    <string name="we_re_glad_to_have_you_back">We\'re glad to have you back</string>
+    <string name="signin_email_address">Email Address</string>
+    <string name="signin_password">Password</string>
+    <string name="proceed_text">You\'re all set and ready to starting your favorite books.</string>
+    <string name="proceed">Proceed</string>
+    <string name="set_up_an_account">Set up an account</string>
+    <string name="new_to_ibook">New to iBook?</string>
+    <string name="enter_your_email">Enter your email</string>
+    <string name="enter_password">Enter password</string>
+    <string name="already_have_an_account">Already have an account?</string>
+    <string name="sig_in_current_user">Sign In</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="there_s_lots_in_store_for_you">There\'s lots in store for you</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="username">Username</string>
+    <string name="email_address">Email Address</string>
+    <string name="password">Password</string>
+    <string name="create_password">Create Password</string>
+    <string name="create_a_username">Create a username</string>
+    <string name="provide_your_last_name">Provide your last name</string>
+    <string name="provide_your_first_name">Provide your first name</string>
+</resources>
