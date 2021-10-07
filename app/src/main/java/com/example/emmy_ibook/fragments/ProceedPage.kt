@@ -29,7 +29,7 @@ class ProceedPage : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         binding.proceedBtn.setOnClickListener {
-            navCon.navigate(R.id.action_proceedPage_to_signinPage)
+            navCon.navigate(R.id.action_proceedPage_to_homeScreen)
         }
     }
 }

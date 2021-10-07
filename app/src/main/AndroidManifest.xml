@@ -10,10 +10,10 @@
         android:supportsRtl="true"
         android:theme="@style/SplashScreenTheme">
         <activity
-            android:name=".HomeScreen"
+            android:name=".activity.MainActivity"
             android:exported="true" />
         <activity
-            android:name=".MainActivity"
+            android:name=".activity.AuthenticationActivity"
             android:exported="true"
             android:theme="@style/SplashScreenTheme">
             <intent-filter>

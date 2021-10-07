@@ -1,9 +1,10 @@
-package com.example.emmy_ibook
+package com.example.emmy_ibook.activity
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.example.emmy_ibook.R
 
-class HomeScreen : AppCompatActivity() {
+class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home_screen)
