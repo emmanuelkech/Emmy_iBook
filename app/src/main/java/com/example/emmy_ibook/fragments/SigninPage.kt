@@ -31,5 +31,8 @@ class SigninPage : Fragment() {
         binding.setupAccount.setOnClickListener {
             navCon.navigate(R.id.action_signinPage_to_signupPage)
         }
+        binding.signinBtn.setOnClickListener {
+            navCon.navigate(R.id.action_signinPage_to_proceedPage)
+        }
     }
 }
