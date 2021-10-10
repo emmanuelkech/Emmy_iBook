@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <style name="SplashTheme" parent="Theme.Emmy_iBook" android:layout_width="wrap_content" android:layout_height="wrap_content">
+
+        <item name="android:statusBarColor" tools:targetApi="l" android:layout_width="wrap_content" android:layout_height="wrap_content">@android:color/transparent</item>
+        <item name="android:windowBackground" android:layout_width="wrap_content" android:layout_height="wrap_content">@drawable/splash_screen</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="m" android:layout_width="wrap_content" android:layout_height="wrap_content">true</item>
+        <item name="android:navigationBarColor" android:layout_height="wrap_content" android:layout_width="wrap_content">@android:color/transparent</item>
+        <item name="android:windowLightNavigationBar" tools:targetApi="P" android:layout_width="wrap_content" android:layout_height="wrap_content">true</item>
+
+    </style>
+
+</resources>

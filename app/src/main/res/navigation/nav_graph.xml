@@ -3,17 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/splashScreen">
-
-    <fragment
-        android:id="@+id/splashScreen"
-        android:name="com.example.emmy_ibook.fragments.SplashScreen"
-        android:label="fragment_splash_screen"
-        tools:layout="@layout/fragment_splash_screen" >
-        <action
-            android:id="@+id/action_splashScreen_to_onboardingPage"
-            app:destination="@id/onboardingPage" />
-    </fragment>
+    app:startDestination="@id/onboardingPage">
 
     <fragment
         android:id="@+id/onboardingPage"
@@ -53,5 +43,13 @@
         <action
             android:id="@+id/action_proceedPage_to_signinPage"
             app:destination="@id/signinPage" />
+        <action
+            android:id="@+id/action_proceedPage_to_donateFragment"
+            app:destination="@id/donateFragment" />
     </fragment>
+    <fragment
+        android:id="@+id/donateFragment"
+        android:name="com.example.emmy_ibook.fragments.DonateFragment"
+        android:label="fragment_donate"
+        tools:layout="@layout/fragment_donate" />
 </navigation>
