@@ -22,10 +22,11 @@
         <entry key="..\:/Users/Mohbeauty/AndroidStudioProjects/Emmy_iBook/app/src/main/res/layout/fragment_categorisation.xml" value="0.11594202898550725" />
         <entry key="..\:/Users/User/AndroidStudioProjects/Emmy_iBook/app/src/main/res/layout/activity_home_screen.xml" value="0.22" />
         <entry key="..\:/Users/User/AndroidStudioProjects/Emmy_iBook/app/src/main/res/layout/fragment_home.xml" value="0.18802083333333333" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/Emmy_iBook/app/src/main/res/layout/fragment_home.xml" value="0.1" />
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="11" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">

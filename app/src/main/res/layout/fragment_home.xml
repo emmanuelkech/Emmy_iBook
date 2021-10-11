@@ -1,14 +1,107 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".fragments.HomeFragment">
+    android:layout_height="wrap_content">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/home_fragment_container"
+        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="wrap_content"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        tools:context=".fragments.HomeFragment">
 
-</FrameLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/search_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_20"
+            android:layout_marginEnd="58dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_search"
+                app:layout_constraintTop_toTopOf="@id/search_container"
+                app:layout_constraintBottom_toBottomOf="@id/search_container"
+                app:layout_constraintEnd_toEndOf="@id/search_container"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/hm_lyt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            app:layout_constraintTop_toBottomOf="@id/search_container"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/hm_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="49dp"
+                android:text="@string/explore_categories"
+                android:textSize="@dimen/dimen_text_20"
+                android:textStyle="bold"
+                android:fontFamily="@font/sf_pro_rounded_regular"
+                android:textColor="#3A3A3A"
+                app:layout_constraintStart_toStartOf="@id/hm_lyt"
+                app:layout_constraintTop_toTopOf="@id/hm_lyt"
+                app:layout_constraintBottom_toBottomOf="@id/hm_lyt"/>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAlignment="viewEnd"
+                android:layout_marginEnd="49dp"
+                android:text="@string/more"
+                android:textColor="#232222"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="@id/hm_lyt"
+                app:layout_constraintTop_toTopOf="@id/hm_lyt"
+                app:layout_constraintBottom_toBottomOf="@id/hm_lyt"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_explore_categories"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/hm_lyt"/>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/best_reads"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_20"
+            android:layout_marginBottom="5dp"
+            android:layout_marginStart="49dp"
+            android:text="@string/best_reads"
+            android:textSize="20sp"
+            android:fontFamily="@font/sf_pro_rounded_regular"
+            android:textStyle="bold"
+            android:textColor="#3A3A3A"
+            app:layout_constraintTop_toBottomOf="@id/rv_explore_categories"
+            app:layout_constraintBottom_toTopOf="@id/rv_best_reads"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_best_reads"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/best_reads"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
+
