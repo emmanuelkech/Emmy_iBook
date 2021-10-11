@@ -27,4 +27,15 @@
     <string name="create_a_username">Create a username</string>
     <string name="provide_your_last_name">Provide your last name</string>
     <string name="provide_your_first_name">Provide your first name</string>
+    <string name="categorisatio_heading_text">All Categories</string>
+    <string name="all">All</string>
+    <string name="biography">Biography</string>
+    <string name="business">Business</string>
+    <string name="children">Children</string>
+    <string name="classics">Classics</string>
+    <string name="comics">Comics</string>
+    <string name="cookbook">Cookbook</string>
+    <string name="ebook">Ebook</string>
+    <string name="fantasy">Fantasy</string>
+    <string name="fiction">Fiction</string>
 </resources>
