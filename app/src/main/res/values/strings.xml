@@ -1,6 +1,21 @@
 <resources>
     <string name="app_name">Emmy_iBook</string>
-    <!-- TODO: Remove or change this placeholder text -->
+
+    <string name="title1">Education</string>
+    <string name="title2">Relationship</string>
+    <string name="title3">Spiritual</string>
+    <string name="title4">Fiction</string>
+
+    <string name="book_title1">The Man Without Qualities</string>
+    <string name="book_title2">Nineteen Eighty Four</string>
+    <string name="book_title3">A Portrait of the Artist as a Young Man</string>
+    <string name="book_author1">Nathan Rose</string>
+    <string name="book_author2">Daniel Drescher</string>
+    <string name="book_author3">Katherine Ellen Foley</string>
+    <string name="book_description1">By Nathan Rose. Cryptocurrency exchange, digital tokens, cryptocurrency wallets.</string>
+    <string name="book_description2">Basic information and foundation on blockchain and Cryptocurrency by Daniel Drescher.</string>
+    <string name="book_description3">Information on Blockchain Technology.</string>
+
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="onboarding_text">Reading is a conversation. All books talk but a good book listens as well.</string>
     <string name="get_started">Get Started</string>
@@ -27,4 +42,7 @@
     <string name="create_a_username">Create a username</string>
     <string name="provide_your_last_name">Provide your last name</string>
     <string name="provide_your_first_name">Provide your first name</string>
+    <string name="best_reads">Best Reads</string>
+    <string name="explore_categories">Explore Categories</string>
+    <string name="more">More</string>
 </resources>
