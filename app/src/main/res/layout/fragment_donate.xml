@@ -51,14 +51,14 @@
                android:textColor="@color/black"
                android:textSize="16sp" />
 
-           <com.google.android.material.textfield.TextInputEditText
-               android:id="@+id/edit_text1"
-               android:layout_width="match_parent"
-               android:layout_height="wrap_content"
-               android:layout_below="@id/title1"
-               android:layout_marginStart="15dp"
-               android:layout_marginEnd="15dp"
-               android:hint="@string/the_jingle_jangle" />
+               <EditText
+                   android:id="@+id/edit_text1"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:layout_below="@id/title1"
+                   android:layout_marginStart="13dp"
+                   android:layout_marginEnd="15dp"
+                   android:hint="@string/the_jingle_jangle"/>
 
            <TextView
                android:id="@+id/title2"
@@ -71,12 +71,12 @@
                android:textColor="@color/black"
                android:textSize="16sp" />
 
-           <com.google.android.material.textfield.TextInputEditText
+           <EditText
                android:id="@+id/edit_text2"
                android:layout_width="180dp"
                android:layout_height="wrap_content"
                android:layout_below="@id/title2"
-               android:layout_marginStart="15dp"
+               android:layout_marginStart="13dp"
                android:hint="@string/the_jingle_jangle" />
 
            <TextView
@@ -92,12 +92,12 @@
                android:textColor="@color/black"
                android:textSize="16sp" />
 
-           <com.google.android.material.textfield.TextInputEditText
+           <EditText
                android:id="@+id/edit_text3"
                android:layout_width="match_parent"
                android:layout_height="wrap_content"
                android:layout_below="@id/title2"
-               android:layout_marginStart="15dp"
+               android:layout_marginStart="13dp"
                android:layout_marginEnd="15dp"
                android:layout_toEndOf="@id/edit_text2"
                android:hint="@string/_2017" />
@@ -113,12 +113,12 @@
                android:textColor="@color/black"
                android:textSize="16sp" />
 
-           <com.google.android.material.textfield.TextInputEditText
+           <EditText
                android:id="@+id/edit_text4"
                android:layout_width="match_parent"
                android:layout_height="wrap_content"
                android:layout_below="@id/title4"
-               android:layout_marginStart="15dp"
+               android:layout_marginStart="13dp"
                android:layout_marginEnd="15dp"
                android:hint="@string/fiction" />
 
@@ -133,12 +133,12 @@
                android:textColor="@color/black"
                android:textSize="16sp" />
 
-           <com.google.android.material.textfield.TextInputEditText
+           <EditText
                android:id="@+id/edit_text5"
                android:layout_width="match_parent"
                android:layout_height="wrap_content"
                android:layout_below="@id/title5"
-               android:layout_marginStart="15dp"
+               android:layout_marginStart="13dp"
                android:layout_marginEnd="15dp"
                android:hint="@string/fiction" />
 
@@ -166,12 +166,12 @@
                android:textColor="@color/black"
                android:textSize="16sp" />
 
-           <com.google.android.material.textfield.TextInputEditText
+           <EditText
                android:id="@+id/edit_text6"
                android:layout_width="180dp"
                android:layout_height="wrap_content"
                android:layout_below="@id/title6"
-               android:layout_marginStart="15dp"
+               android:layout_marginStart="13dp"
                android:hint="@string/_10_10_10" />
 
            <TextView
@@ -187,12 +187,12 @@
                android:textColor="@color/black"
                android:textSize="16sp" />
 
-           <com.google.android.material.textfield.TextInputEditText
+           <EditText
                android:id="@+id/edit_text7"
                android:layout_width="match_parent"
                android:layout_height="wrap_content"
                android:layout_below="@id/title7"
-               android:layout_marginStart="15dp"
+               android:layout_marginStart="13dp"
                android:layout_marginEnd="15dp"
                android:layout_toEndOf="@id/edit_text6"
                android:hint="@string/_10_00am" />
