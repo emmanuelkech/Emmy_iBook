@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Emmy_iBook</string>
+    <string name="app_name">iBook</string>
 
     <string name="title1">Education</string>
     <string name="title2">Relationship</string>
@@ -56,8 +56,29 @@
     <string name="best_reads">Best Reads</string>
     <string name="explore_categories">Explore Categories</string>
     <string name="more">More</string>
+
+    <string name="back_arrow">back arrow</string>
+    <string name="donate_a_book">Donate a Book</string>
+    <string name="book_name">Book Name</string>
+    <string name="the_jingle_jangle">The Jingle Jangle</string>
+    <string name="author_name">Author Name</string>
+    <string name="year_published">Year Published</string>
+    <string name="_2017">2017</string>
+    <string name="book_category">Book Category</string>
+    <string name="fiction">Fiction</string>
+    <string name="pickup_location">Pickup Location</string>
+    <string name="card_image">card image</string>
+    <string name="pickup_date">Pickup Date</string>
+    <string name="_10_10_10">10/10/10</string>
+    <string name="pickup_time">Pickup Time</string>
+    <string name="_10_00am">10:00am</string>
+    <string name="complete">Complete</string>
+</resources>
+</resources>
+
     <string name="donate_a_book">Donate a Book</string>
     <string name="profile_details">Profile Details</string>
     <string name="search">Search</string>
 
 </resources>
+
