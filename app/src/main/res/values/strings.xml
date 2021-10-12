@@ -5,7 +5,6 @@
     <string name="title2">Relationship</string>
     <string name="title3">Spiritual</string>
     <string name="title4">Fiction</string>
-
     <string name="book_title1">The Man Without Qualities</string>
     <string name="book_title2">Nineteen Eighty Four</string>
     <string name="book_title3">A Portrait of the Artist as a Young Man</string>
@@ -15,7 +14,6 @@
     <string name="book_description1">By Nathan Rose. Cryptocurrency exchange, digital tokens, cryptocurrency wallets.</string>
     <string name="book_description2">Basic information and foundation on blockchain and Cryptocurrency by Daniel Drescher.</string>
     <string name="book_description3">Information on Blockchain Technology.</string>
-
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="onboarding_text">Reading is a conversation. All books talk but a good book listens as well.</string>
     <string name="get_started">Get Started</string>
@@ -47,7 +45,6 @@
     <string name="edit_profile">Edit Profile</string>
     <string name="sign_out">Sign Out</string>
     <string name="edit">Edit</string>
-</resources>
     <string name="categorisatio_heading_text">All Categories</string>
     <string name="all">All</string>
     <string name="biography">Biography</string>
@@ -62,7 +59,6 @@
     <string name="best_reads">Best Reads</string>
     <string name="explore_categories">Explore Categories</string>
     <string name="more">More</string>
-
     <string name="back_arrow">back arrow</string>
     <string name="donate_a_book">Donate a Book</string>
     <string name="book_name">Book Name</string>
@@ -71,7 +67,6 @@
     <string name="year_published">Year Published</string>
     <string name="_2017">2017</string>
     <string name="book_category">Book Category</string>
-    <string name="fiction">Fiction</string>
     <string name="pickup_location">Pickup Location</string>
     <string name="card_image">card image</string>
     <string name="pickup_date">Pickup Date</string>
@@ -79,10 +74,7 @@
     <string name="pickup_time">Pickup Time</string>
     <string name="_10_00am">10:00am</string>
     <string name="complete">Complete</string>
-</resources>
-
-</resources>
-    <string name="donate_a_book">Donate a Book</string>
     <string name="profile_details">Profile Details</string>
     <string name="search">Search</string>
+    <string name="view_profile">View Profile</string>
 </resources>
