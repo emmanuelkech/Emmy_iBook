@@ -56,6 +56,7 @@
     <string name="best_reads">Best Reads</string>
     <string name="explore_categories">Explore Categories</string>
     <string name="more">More</string>
+
     <string name="back_arrow">back arrow</string>
     <string name="donate_a_book">Donate a Book</string>
     <string name="book_name">Book Name</string>
@@ -74,3 +75,10 @@
     <string name="complete">Complete</string>
 </resources>
 </resources>
+
+    <string name="donate_a_book">Donate a Book</string>
+    <string name="profile_details">Profile Details</string>
+    <string name="search">Search</string>
+
+</resources>
+
