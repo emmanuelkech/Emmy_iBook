@@ -77,4 +77,9 @@
     <string name="profile_details">Profile Details</string>
     <string name="search">Search</string>
     <string name="view_profile">View Profile</string>
+    <string name="upload_book_cover">Upload Book Cover</string>
+    <string name="upload_cover_photo_image_description">click to add a new the cover photo for your book</string>
+    <string name="add">Add</string>
+    <string name="donate_hard_copy">Donate Hard Copy</string>
+    <string name="add_a_new_book">Add a New Book</string>
 </resources>
