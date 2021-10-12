@@ -35,4 +35,3 @@ class ProfileFragment : Fragment() {
             navCon.navigate(R.id.action_profileFragment2_to_signinPage)
         }
     }
-}
