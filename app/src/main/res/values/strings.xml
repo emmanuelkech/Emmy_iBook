@@ -56,5 +56,8 @@
     <string name="best_reads">Best Reads</string>
     <string name="explore_categories">Explore Categories</string>
     <string name="more">More</string>
+    <string name="donate_a_book">Donate a Book</string>
+    <string name="profile_details">Profile Details</string>
+    <string name="search">Search</string>
 
 </resources>
