@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="10dp">
+
+    <LinearLayout
+        android:id="@+id/br_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="15dp"
+        android:orientation="horizontal"
+        android:paddingStart="49dp"
+        android:paddingEnd="49dp">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/br_img"
+            android:layout_width="72dp"
+            android:layout_height="107dp"
+            android:layout_marginEnd="18dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/br_details_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/br_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:fontFamily="@font/sf_pro_rounded_regular"
+                android:textColor="#3A3A3A"
+                app:layout_constraintStart_toStartOf="@id/br_details_container"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/br_author"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:textSize="12sp"
+                android:fontFamily="@font/sf_pro_rounded_regular"
+                android:textColor="#CECECE"
+                app:layout_constraintStart_toStartOf="@id/br_details_container"
+                app:layout_constraintTop_toBottomOf="@id/br_title"/>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/br_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:padding="2dp"
+                android:textSize="12sp"
+                android:fontFamily="@font/sf_pro_rounded_regular"
+                android:textColor="#9C9C9C"
+                app:layout_constraintTop_toBottomOf="@id/br_author"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="@id/br_details_container"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>
