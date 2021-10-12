@@ -42,6 +42,12 @@
     <string name="create_a_username">Create a username</string>
     <string name="provide_your_last_name">Provide your last name</string>
     <string name="provide_your_first_name">Provide your first name</string>
+    <string name="save">Save</string>
+    <string name="email">Email</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="edit">Edit</string>
+</resources>
     <string name="categorisatio_heading_text">All Categories</string>
     <string name="all">All</string>
     <string name="biography">Biography</string>
@@ -74,11 +80,9 @@
     <string name="_10_00am">10:00am</string>
     <string name="complete">Complete</string>
 </resources>
-</resources>
 
+</resources>
     <string name="donate_a_book">Donate a Book</string>
     <string name="profile_details">Profile Details</string>
     <string name="search">Search</string>
-
 </resources>
-

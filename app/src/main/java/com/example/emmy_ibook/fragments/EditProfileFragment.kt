@@ -8,12 +8,12 @@ import android.view.ViewGroup
 import androidx.navigation.NavController
 import androidx.navigation.fragment.NavHostFragment
 import com.example.emmy_ibook.R
+import com.example.emmy_ibook.databinding.FragmentEditProfileBinding
 import com.example.emmy_ibook.databinding.FragmentOnboardingPageBinding
-import com.example.emmy_ibook.databinding.FragmentProfileBinding
 
-class ProfileFragment : Fragment() {
+class EditProfileFragment : Fragment() {
 
-    private var _binding: FragmentProfileBinding? = null
+    private var _binding: FragmentEditProfileBinding? = null
     private val binding get() = _binding!!
     private lateinit var navCon : NavController
 
@@ -22,16 +22,14 @@ class ProfileFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View {
         // Inflate the layout for this fragment
-        _binding = FragmentProfileBinding.inflate(inflater, container, false)
+        _binding = FragmentEditProfileBinding.inflate(inflater, container, false)
         navCon = NavHostFragment.findNavController(this)
         return binding.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        binding.editButton.setOnClickListener {
-            navCon.navigate(R.id.action_profileFragment2_to_editProfileFragment2)
-        }
-        binding.signOutButton.setOnClickListener {
-            navCon.navigate(R.id.action_profileFragment2_to_signinPage)
+        binding.saveButton.setOnClickListener {
+            navCon.navigate(R.id.action_editProfileFragment2_to_profileFragment2)
         }
     }
+}
