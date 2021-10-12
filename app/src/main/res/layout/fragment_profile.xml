@@ -1,21 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<androidx.constraintlayout.widget.ConstraintLayout
+
+<ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
-  
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".fragments.ProfileFragment">
-  
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
         <TextView
             android:id="@+id/profileTV"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="50dp"
-            android:text="View Profile"
+            android:text="@string/view_profile"
             android:textColor="#000000"
             android:textSize="20sp"
             app:layout_constraintEnd_toEndOf="parent"
@@ -145,11 +146,11 @@
             android:inputType="textPassword"
             android:minHeight="48dp"
             android:text="@string/password"
+            android:textSize="16sp"
             app:layout_constraintEnd_toEndOf="@+id/passwordTV"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="@+id/passwordTV"
-            app:layout_constraintTop_toBottomOf="@+id/passwordTV"
-            android:textSize="16sp" />
+            app:layout_constraintTop_toBottomOf="@+id/passwordTV" />
 
         <Button
             android:id="@+id/editButton"
@@ -180,7 +181,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="24dp"
             android:backgroundTint="@color/white"
-            android:drawableRight="@drawable/signout"
+            android:drawableEnd="@drawable/signout"
             android:text="@string/sign_out"
             android:textAllCaps="false"
             android:textColor="@color/green"
@@ -190,11 +191,7 @@
             app:layout_constraintStart_toStartOf="@+id/editButton"
             app:layout_constraintTop_toBottomOf="@+id/editButton" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/profile_details" />
 
-</FrameLayout>
+</ScrollView>

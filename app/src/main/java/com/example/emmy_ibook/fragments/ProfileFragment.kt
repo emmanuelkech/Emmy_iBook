@@ -15,7 +15,7 @@ class ProfileFragment : Fragment() {
 
     private var _binding: FragmentProfileBinding? = null
     private val binding get() = _binding!!
-    private lateinit var navCon : NavController
+    private lateinit var navCon: NavController
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -35,3 +35,4 @@ class ProfileFragment : Fragment() {
             navCon.navigate(R.id.action_profileFragment2_to_signinPage)
         }
     }
+}
