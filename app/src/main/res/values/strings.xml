@@ -42,7 +42,7 @@
     <string name="create_a_username">Create a username</string>
     <string name="provide_your_last_name">Provide your last name</string>
     <string name="provide_your_first_name">Provide your first name</string>
-    <string name="categorisatio_heading_text">All Categories</string>
+    <string name="categorisation_heading_text">All Categories</string>
     <string name="all">All</string>
     <string name="biography">Biography</string>
     <string name="business">Business</string>
@@ -56,5 +56,6 @@
     <string name="best_reads">Best Reads</string>
     <string name="explore_categories">Explore Categories</string>
     <string name="more">More</string>
+    <string name="menu_search">Search</string>
 
 </resources>
