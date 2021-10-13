@@ -2,5 +2,7 @@
 <resources>
     <dimen name="dimen_20">20dp</dimen>
     <dimen name="dimen_text_20">20sp</dimen>
+    <dimen name="dimen_25">25dp</dimen>
+    <dimen name="dimen_48">48dp</dimen>
 
 </resources>

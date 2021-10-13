@@ -6,12 +6,12 @@
     tools:context=".fragments.AddNewBook">
 
     <LinearLayout
-        android:layout_margin="48dp"
+        android:layout_margin="@dimen/dimen_48"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
         <LinearLayout
-            android:layout_marginBottom="48dp"
+            android:layout_marginBottom="@dimen/dimen_48"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
@@ -78,7 +78,7 @@
             </LinearLayout>
 
             <LinearLayout
-                android:layout_marginStart="25dp"
+                android:layout_marginStart="@dimen/dimen_25"
                 android:layout_gravity="end"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -101,7 +101,7 @@
             </LinearLayout>
         </LinearLayout>
         <TextView
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="@dimen/dimen_20"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/book_category"
@@ -120,7 +120,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="@dimen/dimen_20"
             android:text="@string/upload_book_cover"
             android:textAppearance="@style/name" />
 
@@ -142,7 +142,7 @@
             android:backgroundTint="@color/green"/>
        <Button
            android:id="@+id/donate_hard_copy_btn"
-           android:layout_marginTop="20dp"
+           android:layout_marginTop="@dimen/dimen_text_20"
            android:layout_marginBottom="177dp"
            android:layout_width="match_parent"
            android:layout_height="wrap_content"
