@@ -1,6 +1,5 @@
 <resources>
     <string name="app_name">iBook</string>
-
     <string name="title1">Education</string>
     <string name="title2">Relationship</string>
     <string name="title3">Spiritual</string>
@@ -79,5 +78,23 @@
     <string name="profile_details">Profile Details</string>
     <string name="search">Search</string>
     <string name="view_profile">View Profile</string>
+    <string name="read_text">Read</string>
+    <string name="desc_text">A Portrait of the Artist as a Young Man</string>
+    <string name="bookshelf_text">Bookshelf</string>
+    <string name="read_btn">ReadBtn</string>
+    <string name="_1_book">1 Book</string>
+    <string name="fibre_dot">fibre_dot</string>
+    <string name="lens_dot">lens_dot</string>
+    <string name="lens_dot2">lens_dot2</string>
+    <string name="bookmark_icon">bookMark_icon</string>
+    <string name="bookmark_content">320</string>
+    <string name="calender_icon">TODO</string>
+    <string name="date_content">10–12–2020</string>
+    <string name="bookshelf_title">Bookshelf</string>
+    <string name="home_title">Home</string>
+    <string name="notifications_title">Notifications</string>
+    <string name="books_menu">Books</string>
+    <string name="notification_menu">Notification</string>
+    <string name="home_menu">Home</string>
     <string name="abie_pepple">Abie Pepple</string>
 </resources>
