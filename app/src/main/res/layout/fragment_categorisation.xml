@@ -28,7 +28,6 @@
             android:layout_marginTop="@dimen/dimen_20"
             android:fontFamily="@font/sf_pro_rounded_regular"
             android:text="@string/categorisation_heading_text"
-            android:text="@string/categorisatio_heading_text"
             android:textSize="@dimen/dimen_text_20"
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="@id/search_bar"
