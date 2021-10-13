@@ -9,8 +9,7 @@ import com.example.emmy_ibook.R
 
 
 
-class BookshelfPage : Fragment() {
-
+class BookshelfPage : Fragment(R.layout.fragment_bookshelf_page) {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

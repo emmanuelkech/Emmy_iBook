@@ -3,6 +3,7 @@ package com.example.emmy_ibook.activity
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.fragment.app.Fragment
+import androidx.navigation.NavController
 import com.example.emmy_ibook.R
 import com.example.emmy_ibook.databinding.ActivityHomeScreenBinding
 import com.example.emmy_ibook.fragments.HomeFragment
@@ -21,6 +22,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var appBarConfiguration: AppBarConfiguration
 
 
+
     private lateinit var binding: ActivityHomeScreenBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -34,19 +36,17 @@ class MainActivity : AppCompatActivity() {
         binding.navView.setupWithNavController(navController)
 
         bottomNavBar = binding.bottomNavigation
-        //setCurrentFragment(homeFragment)
 
+
+        bottomNavBar.setupWithNavController(navController)
 
     }
 
     override fun onSupportNavigateUp(): Boolean {
-        val bottomNavigationView = findViewById<BottomNavigationView>(R.id.bottomNavigation)
-        val navControllerBottomNavigationView = findNavController(R.id.fragmentContainerView)
-
-        bottomNavigationView.setupWithNavController(navControllerBottomNavigationView)
         val navController = findNavController(R.id.fragment_container)
         return navController.navigateUp(appBarConfiguration) || super.onSupportNavigateUp()
     }
+
 
     /*private fun setCurrentFragment(fragment: Fragment){
         supportFragmentManager.beginTransaction().apply {
