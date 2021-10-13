@@ -35,17 +35,31 @@ class MainActivity : AppCompatActivity() {
 
         bottomNavBar = binding.bottomNavigation
         //setCurrentFragment(homeFragment)
+
+
     }
 
     override fun onSupportNavigateUp(): Boolean {
+        val bottomNavigationView = findViewById<BottomNavigationView>(R.id.bottomNavigation)
+        val navControllerBottomNavigationView = findNavController(R.id.fragmentContainerView)
+
+        bottomNavigationView.setupWithNavController(navControllerBottomNavigationView)
         val navController = findNavController(R.id.fragment_container)
         return navController.navigateUp(appBarConfiguration) || super.onSupportNavigateUp()
     }
 
-    /*private fun setCurrentFragment(fragment: Fragment){
+    private fun setCurrentFragment(fragment: Fragment){
         supportFragmentManager.beginTransaction().apply {
             replace(R.id.fragment_container, fragment)
             commit()
         }
-    }*/
+
+    }
+
+    override fun onBackPressed() {
+
+    }
+
+    
+
 }

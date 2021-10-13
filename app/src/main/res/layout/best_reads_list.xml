@@ -4,23 +4,23 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_marginTop="10dp"
-    android:layout_marginBottom="10dp">
+    android:layout_marginTop="@dimen/dimen_10"
+    android:layout_marginBottom="@dimen/dimen_10">
 
     <LinearLayout
         android:id="@+id/br_container"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:padding="15dp"
+        android:padding="@dimen/dimen_15"
         android:orientation="horizontal"
-        android:paddingStart="49dp"
-        android:paddingEnd="49dp">
+        android:paddingStart="@dimen/dimen_49"
+        android:paddingEnd="@dimen/dimen_49">
 
         <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/br_img"
-            android:layout_width="72dp"
-            android:layout_height="107dp"
-            android:layout_marginEnd="18dp"
+            android:layout_width="@dimen/dimen_72"
+            android:layout_height="@dimen/dimen_107"
+            android:layout_marginEnd="@dimen/dimen_18"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"/>
@@ -34,9 +34,9 @@
                 android:id="@+id/br_title"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:padding="2dp"
+                android:padding="@dimen/dimen_2"
                 android:textStyle="bold"
-                android:textSize="16sp"
+                android:textSize="@dimen/dimen_text_16"
                 android:fontFamily="@font/sf_pro_rounded_regular"
                 android:textColor="#3A3A3A"
                 app:layout_constraintStart_toStartOf="@id/br_details_container"
@@ -46,8 +46,8 @@
                 android:id="@+id/br_author"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:padding="2dp"
-                android:textSize="12sp"
+                android:padding="@dimen/dimen_2"
+                android:textSize="@dimen/dimen_text_12"
                 android:fontFamily="@font/sf_pro_rounded_regular"
                 android:textColor="#CECECE"
                 app:layout_constraintStart_toStartOf="@id/br_details_container"
@@ -58,8 +58,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="start"
-                android:padding="2dp"
-                android:textSize="12sp"
+                android:padding="@dimen/dimen_2"
+                android:textSize="@dimen/dimen_text_12"
                 android:fontFamily="@font/sf_pro_rounded_regular"
                 android:textColor="#9C9C9C"
                 app:layout_constraintTop_toBottomOf="@id/br_author"

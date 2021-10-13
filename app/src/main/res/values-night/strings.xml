@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="categorisatio_heading_text">All Categories</string>
+    <string name="categorisation_heading_text">All Categories</string>
     <string name="all">All</string>
     <string name="biography">Biography</string>
     <string name="business">Business</string>
