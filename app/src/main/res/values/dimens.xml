@@ -2,5 +2,23 @@
 <resources>
     <dimen name="dimen_20">20dp</dimen>
     <dimen name="dimen_text_20">20sp</dimen>
+    <dimen name="dimen_23">23sp</dimen>
+    <dimen name="dimen_30">30dp</dimen>
+    <dimen name="dimen_40">40dp</dimen>
+    <dimen name="dimen_100">100dp</dimen>
+    <dimen name="dimen_220">220dp</dimen>
+    <dimen name="dimen_55">55dp</dimen>
+    <dimen name="dimen_15sp">15sp</dimen>
+    <dimen name="dimen_4">4dp</dimen>
+    <dimen name="dimen_95">95dp</dimen>
+    <dimen name="dimen_3">3dp</dimen>
+    <dimen name="dimen_5">5dp</dimen>
+    <dimen name="dimen_15">15dp</dimen>
+    <dimen name="dimen_10">10dp</dimen>
+    <dimen name="dimen_11sp">11sp</dimen>
+    <dimen name="dimen_9">9dp</dimen>
+    <dimen name="dimen_38">38dp</dimen>
+    <dimen name="dimen_28">28dp</dimen>
+    <dimen name="dimen_70">70dp</dimen>
 
 </resources>
