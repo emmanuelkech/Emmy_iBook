@@ -10,9 +10,9 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="49dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="49dp">
+        android:layout_marginStart="@dimen/dimen_49"
+        android:layout_marginTop="@dimen/dimen_20"
+        android:layout_marginEnd="@dimen/dimen_49">
 
         <androidx.appcompat.widget.SearchView
             android:id="@+id/search_bar"
@@ -25,8 +25,9 @@
             android:id="@+id/categorisation_heading"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="@dimen/dimen_20"
             android:fontFamily="@font/sf_pro_rounded_regular"
+            android:text="@string/categorisation_heading_text"
             android:text="@string/categorisatio_heading_text"
             android:textSize="@dimen/dimen_text_20"
             android:textStyle="bold"
@@ -35,9 +36,9 @@
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btn_all"
-            android:layout_width="146dp"
-            android:layout_height="65dp"
-            android:layout_marginTop="10dp"
+            android:layout_width="@dimen/dimen_146"
+            android:layout_height="@dimen/dimen_65"
+            android:layout_marginTop="@dimen/dimen_10"
             android:backgroundTint="@drawable/categorisation_btn_bg"
             android:fontFamily="@font/sf_pro_rounded_regular"
             android:text="@string/all"
@@ -49,9 +50,9 @@
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btn_biography"
-            android:layout_width="146dp"
-            android:layout_height="65dp"
-            android:layout_marginTop="10dp"
+            android:layout_width="@dimen/dimen_146"
+            android:layout_height="@dimen/dimen_65"
+            android:layout_marginTop="@dimen/dimen_10"
             android:backgroundTint="@drawable/categorisation_btn_bg"
             android:fontFamily="@font/sf_pro_rounded_regular"
             android:text="@string/biography"
@@ -63,9 +64,9 @@
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btn_business"
-            android:layout_width="146dp"
-            android:layout_height="65dp"
-            android:layout_marginTop="10dp"
+            android:layout_width="@dimen/dimen_146"
+            android:layout_height="@dimen/dimen_65"
+            android:layout_marginTop="@dimen/dimen_10"
             android:backgroundTint="@drawable/categorisation_btn_bg"
             android:fontFamily="@font/sf_pro_rounded_regular"
             android:text="@string/business"
@@ -77,9 +78,9 @@
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btn_children"
-            android:layout_width="146dp"
-            android:layout_height="65dp"
-            android:layout_marginTop="10dp"
+            android:layout_width="@dimen/dimen_146"
+            android:layout_height="@dimen/dimen_65"
+            android:layout_marginTop="@dimen/dimen_10"
             android:backgroundTint="@drawable/categorisation_btn_bg"
             android:fontFamily="@font/sf_pro_rounded_regular"
             android:text="@string/children"
@@ -91,9 +92,9 @@
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btn_classics"
-            android:layout_width="146dp"
-            android:layout_height="65dp"
-            android:layout_marginTop="10dp"
+            android:layout_width="@dimen/dimen_146"
+            android:layout_height="@dimen/dimen_65"
+            android:layout_marginTop="@dimen/dimen_10"
             android:backgroundTint="@drawable/categorisation_btn_bg"
             android:fontFamily="@font/sf_pro_rounded_regular"
             android:text="@string/classics"
@@ -105,9 +106,9 @@
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btn_comics"
-            android:layout_width="146dp"
-            android:layout_height="65dp"
-            android:layout_marginTop="10dp"
+            android:layout_width="@dimen/dimen_146"
+            android:layout_height="@dimen/dimen_65"
+            android:layout_marginTop="@dimen/dimen_10"
             android:backgroundTint="@drawable/categorisation_btn_bg"
             android:fontFamily="@font/sf_pro_rounded_regular"
             android:text="@string/comics"
@@ -119,9 +120,9 @@
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btn_cookbook"
-            android:layout_width="146dp"
-            android:layout_height="65dp"
-            android:layout_marginTop="10dp"
+            android:layout_width="@dimen/dimen_146"
+            android:layout_height="@dimen/dimen_65"
+            android:layout_marginTop="@dimen/dimen_10"
             android:backgroundTint="@drawable/categorisation_btn_bg"
             android:fontFamily="@font/sf_pro_rounded_regular"
             android:text="@string/cookbook"
@@ -133,9 +134,9 @@
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btn_ebook"
-            android:layout_width="146dp"
-            android:layout_height="65dp"
-            android:layout_marginTop="10dp"
+            android:layout_width="@dimen/dimen_146"
+            android:layout_height="@dimen/dimen_65"
+            android:layout_marginTop="@dimen/dimen_10"
             android:backgroundTint="@drawable/categorisation_btn_bg"
             android:fontFamily="@font/sf_pro_rounded_regular"
             android:text="@string/ebook"
@@ -147,9 +148,9 @@
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btn_fantasy"
-            android:layout_width="146dp"
-            android:layout_height="65dp"
-            android:layout_marginTop="10dp"
+            android:layout_width="@dimen/dimen_146"
+            android:layout_height="@dimen/dimen_65"
+            android:layout_marginTop="@dimen/dimen_10"
             android:backgroundTint="@drawable/categorisation_btn_bg"
             android:fontFamily="@font/sf_pro_rounded_regular"
             android:text="@string/fantasy"
@@ -161,9 +162,9 @@
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btn_fiction"
-            android:layout_width="146dp"
-            android:layout_height="65dp"
-            android:layout_marginTop="10dp"
+            android:layout_width="@dimen/dimen_146"
+            android:layout_height="@dimen/dimen_65"
+            android:layout_marginTop="@dimen/dimen_10"
             android:backgroundTint="@drawable/categorisation_btn_bg"
             android:fontFamily="@font/sf_pro_rounded_regular"
             android:text="@string/fiction"

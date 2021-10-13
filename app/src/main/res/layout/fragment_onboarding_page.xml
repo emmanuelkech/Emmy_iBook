@@ -16,7 +16,7 @@
             android:id="@+id/imageView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="128dp"
+            android:layout_marginTop="@dimen/dimen_128"
             android:importantForAccessibility="no"
             android:src="@drawable/reading"
             app:layout_constraintEnd_toEndOf="parent"
@@ -26,9 +26,9 @@
 
         <com.google.android.material.textview.MaterialTextView
             android:id="@+id/textView"
-            android:layout_width="300dp"
+            android:layout_width="@dimen/dimen_300"
             android:layout_height="wrap_content"
-            android:layout_marginTop="32dp"
+            android:layout_marginTop="@dimen/dimen_32"
             android:text="@string/onboarding_text"
             android:fontFamily="@font/roboto_medium"
             android:textSize="@dimen/dimen_text_20"
@@ -41,10 +41,10 @@
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/get_started_btn"
-            android:layout_width="300dp"
-            android:layout_height="50dp"
-            android:layout_marginTop="60dp"
-            android:layout_marginBottom="100dp"
+            android:layout_width="@dimen/dimen_300"
+            android:layout_height="@dimen/dimen_50"
+            android:layout_marginTop="@dimen/dimen_60"
+            android:layout_marginBottom="@dimen/dimen_100"
             android:text="@string/get_started"
             android:fontFamily="@font/sf_pro_rounded_regular"
             android:textSize="@dimen/dimen_text_16"
