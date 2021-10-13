@@ -23,7 +23,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="4dp"
             android:layout_marginTop="4dp"
-            android:text="Reginald Pepple"
+            android:text="@string/reginald_pepple"
             android:textColor="@color/green"
             android:textSize="@dimen/dimen_text_20"
             android:textStyle="bold"
