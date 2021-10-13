@@ -8,31 +8,31 @@ import android.view.ViewGroup
 import androidx.navigation.NavController
 import androidx.navigation.fragment.NavHostFragment
 import com.example.emmy_ibook.R
-import com.example.emmy_ibook.databinding.FragmentSigninPageBinding
+import com.example.emmy_ibook.databinding.FragmentOnboardingPageBinding
+import com.example.emmy_ibook.databinding.FragmentProfileBinding
 
+class ProfileFragment : Fragment() {
 
-class SigninPage : Fragment() {
-
-    private var _binding: FragmentSigninPageBinding? = null
+    private var _binding: FragmentProfileBinding? = null
     private val binding get() = _binding!!
-    private lateinit var navCon : NavController
+    private lateinit var navCon: NavController
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
         // Inflate the layout for this fragment
-        _binding = FragmentSigninPageBinding.inflate(inflater, container, false)
+        _binding = FragmentProfileBinding.inflate(inflater, container, false)
         navCon = NavHostFragment.findNavController(this)
         return binding.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        binding.setupAccount.setOnClickListener {
-            navCon.navigate(R.id.action_signinPage_to_signupPage)
+        binding.editButton.setOnClickListener {
+            navCon.navigate(R.id.action_profileFragment2_to_editProfileFragment2)
         }
-        binding.signinBtn.setOnClickListener {
-            navCon.navigate(R.id.action_signinPage_to_proceedPage)
+        binding.signOutButton.setOnClickListener {
+            navCon.navigate(R.id.action_profileFragment2_to_signinPage)
         }
     }
 }
