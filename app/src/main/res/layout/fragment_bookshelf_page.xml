@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".fragments.BookshelfPage">
+
+
+    <SearchView
+
+        android:id="@+id/search_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_40"
+        android:layout_marginTop="@dimen/dimen_30"
+        android:layout_marginEnd="@dimen/dimen_40"
+        android:background="@drawable/custom_background"
+        android:iconifiedByDefault="true"
+        android:layoutDirection="rtl"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/titleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_40"
+        android:layout_marginTop="@dimen/dimen_30"
+        android:text="@string/bookshelf_text"
+        android:textColor="@color/black"
+        android:textSize="@dimen/dimen_23"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/search_bar" />
+
+    <TextView
+        android:id="@+id/bookCat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_100"
+        android:layout_marginTop="@dimen/dimen_40"
+        android:text="@string/_1_book"
+        android:textColor="#B9B9B9"
+        android:textSize="13sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/titleText"
+        app:layout_constraintTop_toBottomOf="@id/search_bar"
+        tools:ignore="TextContrastCheck" />
+    <ImageView
+        android:id="@+id/bookImg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_40"
+        android:layout_marginTop="@dimen/dimen_30"
+        android:contentDescription="@string/read_btn"
+        android:src="@drawable/rectangle_5"
+        app:layout_constraintStart_toStartOf= "parent"
+        app:layout_constraintTop_toBottomOf="@id/titleText"/>
+
+    <TextView
+        android:id="@+id/descText"
+        android:layout_width="@dimen/dimen_220"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_15"
+        android:layout_marginTop="@dimen/dimen_30"
+        android:layout_marginEnd="@dimen/dimen_55"
+        android:textSize="@dimen/dimen_15sp"
+        android:textAlignment="inherit"
+        android:textColor="@color/black"
+        android:textStyle="normal"
+        android:text="@string/desc_text"
+        app:layout_constraintStart_toEndOf="@id/bookImg"
+        app:layout_constraintTop_toBottomOf="@id/titleText"
+        app:layout_constraintEnd_toEndOf ="parent"/>
+
+    <ImageView
+        android:id="@+id/dotImgTop"
+        android:layout_width="@dimen/dimen_4"
+        android:layout_height="@dimen/dimen_4"
+        android:src="@drawable/ic_baseline_lens_24"
+        android:layout_marginTop="@dimen/dimen_95"
+        app:layout_constraintStart_toEndOf="@id/descText"
+        app:layout_constraintTop_toBottomOf="@id/search_bar"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:contentDescription="@string/lens_dot" />
+
+    <ImageView
+        android:id="@+id/dotImgMid"
+        android:layout_width="@dimen/dimen_4"
+        android:layout_height="@dimen/dimen_3"
+        android:contentDescription="@string/fibre_dot"
+        android:src="@drawable/fiber_24"
+        android:layout_marginTop="5dp"
+        app:layout_constraintStart_toEndOf="@id/descText"
+        app:layout_constraintTop_toBottomOf="@id/dotImgTop"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <ImageView
+        android:id="@+id/dotImgBottom"
+        android:layout_width="@dimen/dimen_4"
+        android:layout_height="@dimen/dimen_4"
+        android:src="@drawable/ic_baseline_lens_24"
+        android:layout_marginTop="@dimen/dimen_5"
+        app:layout_constraintStart_toEndOf="@id/descText"
+        app:layout_constraintTop_toBottomOf="@id/dotImgMid"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:contentDescription="@string/lens_dot2" />
+
+    <ImageView
+        android:id="@+id/bookMarkImg"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dimen_15"
+        android:src="@drawable/ic_baseline_book_24"
+        app:layout_constraintTop_toBottomOf="@id/descText"
+        app:layout_constraintStart_toEndOf="@id/bookImg"
+        android:layout_marginStart="@dimen/dimen_15"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:contentDescription="@string/bookmark_icon" />
+
+    <TextView
+        android:id="@+id/textMark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/bookmark_content"
+        android:textSize="@dimen/dimen_11sp"
+        android:layout_marginTop="@dimen/dimen_9"
+        android:layout_marginStart="@dimen/dimen_3"
+        app:layout_constraintStart_toEndOf="@id/bookMarkImg"
+        app:layout_constraintTop_toBottomOf="@id/descText"/>
+
+    <ImageView
+        android:id="@+id/calendarImg"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dimen_15"
+        android:src="@drawable/calendar_24"
+        app:layout_constraintTop_toBottomOf="@id/descText"
+        app:layout_constraintStart_toEndOf="@id/textMark"
+        android:layout_marginStart="@dimen/dimen_20"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:contentDescription="@string/calender_icon" />
+
+    <TextView
+        android:id="@+id/textDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/date_content"
+        android:textSize="@dimen/dimen_11sp"
+        android:layout_marginTop="@dimen/dimen_9"
+        android:layout_marginStart="@dimen/dimen_3"
+        app:layout_constraintStart_toEndOf="@id/calendarImg"
+        app:layout_constraintTop_toBottomOf="@id/descText"/>
+
+
+    <Button
+        android:layout_width="@dimen/dimen_70"
+        android:layout_height="@dimen/dimen_38"
+        android:layout_marginStart="@dimen/dimen_20"
+        android:layout_marginTop="@dimen/dimen_28"
+        android:text="@string/read_text"
+        android:textAllCaps="false"
+        android:textSize="@dimen/dimen_11sp"
+        app:layout_constraintStart_toEndOf="@id/bookImg"
+        app:layout_constraintTop_toBottomOf="@id/descText"
+        tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
+
+   <include layout="@layout/activity_book_shelf"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
