@@ -3,15 +3,16 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/bottom_nav"
-    app:startDestination="@id/bookshelfPage">
+    app:startDestination="@id/homeFragment">
 
-    <fragment
-        android:id="@+id/bookshelfPage"
-        android:name="com.example.emmy_ibook.fragments.BookshelfPage"
-        android:label="BookshelfPage" />
     <fragment
         android:id="@+id/homeFragment"
         android:name="com.example.emmy_ibook.fragments.HomeFragment"
         android:label="fragment_home"
         tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/bookshelfPage"
+        android:name="com.example.emmy_ibook.fragments.BookshelfPage"
+        android:label="fragment_bookshelf_page"
+        tools:layout="@layout/fragment_bookshelf_page" />
 </navigation>

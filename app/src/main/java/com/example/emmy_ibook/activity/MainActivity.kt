@@ -35,9 +35,15 @@ class MainActivity : AppCompatActivity() {
 
         bottomNavBar = binding.bottomNavigation
         //setCurrentFragment(homeFragment)
+
+
     }
 
     override fun onSupportNavigateUp(): Boolean {
+        val bottomNavigationView = findViewById<BottomNavigationView>(R.id.bottomNavigation)
+        val navControllerBottomNavigationView = findNavController(R.id.fragmentContainerView)
+
+        bottomNavigationView.setupWithNavController(navControllerBottomNavigationView)
         val navController = findNavController(R.id.fragment_container)
         return navController.navigateUp(appBarConfiguration) || super.onSupportNavigateUp()
     }
