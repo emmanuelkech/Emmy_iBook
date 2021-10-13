@@ -30,4 +30,5 @@
     <dimen name="dimen_600">600dp</dimen>
     <dimen name="dimen_70">70dp</dimen>
     <dimen name="dimen_2_5">2.5dp</dimen>
+    <dimen name="dimen_text_16">20sp</dimen>
 </resources>

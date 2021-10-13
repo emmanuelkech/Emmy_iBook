@@ -40,16 +40,13 @@
     <string name="create_a_username">Create a username</string>
     <string name="provide_your_last_name">Provide your last name</string>
     <string name="provide_your_first_name">Provide your first name</string>
-
     <string name="categorisation_heading_text">All Categories</string>
-
     <string name="save">Save</string>
     <string name="email">Email</string>
     <string name="edit_profile">Edit Profile</string>
     <string name="sign_out">Sign Out</string>
     <string name="edit">Edit</string>
     <string name="categorisatio_heading_text">All Categories</string>
-
     <string name="all">All</string>
     <string name="biography">Biography</string>
     <string name="business">Business</string>
@@ -63,10 +60,7 @@
     <string name="best_reads">Best Reads</string>
     <string name="explore_categories">Explore Categories</string>
     <string name="more">More</string>
-
     <string name="menu_search">Search</string>
-
-
     <string name="back_arrow">back arrow</string>
     <string name="donate_a_book">Donate a Book</string>
     <string name="book_name">Book Name</string>
@@ -85,5 +79,5 @@
     <string name="profile_details">Profile Details</string>
     <string name="search">Search</string>
     <string name="view_profile">View Profile</string>
-
+    <string name="abie_pepple">Abie Pepple</string>
 </resources>
