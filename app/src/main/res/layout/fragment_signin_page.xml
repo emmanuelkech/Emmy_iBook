@@ -53,7 +53,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
             android:text="@string/sign_in"
-            android:textSize="20sp"
+            android:textSize="@dimen/dimen_text_20"
             android:textColor="#3A3A3A"
             android:fontFamily="@font/sf_pro_rounded_regular"
             app:layout_constraintEnd_toEndOf="@id/signin_btn"
@@ -153,7 +153,7 @@
             android:layout_marginTop="20dp"
             android:text="@string/sign_in"
             android:fontFamily="@font/sf_pro_rounded_regular"
-            android:textSize="16sp"
+            android:textSize="@dimen/dimen_text_16"
             android:textAllCaps="false"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -178,7 +178,7 @@
                 android:fontFamily="@font/sf_pro_rounded_regular"
                 android:text="@string/new_to_ibook"
                 android:textColor="#959595"
-                android:textSize="16sp"/>
+                android:textSize="@dimen/dimen_text_16"/>
 
             <com.google.android.material.textview.MaterialTextView
                 android:id="@+id/setup_account"
@@ -187,7 +187,7 @@
                 android:fontFamily="@font/sf_pro_rounded_regular"
                 android:text="@string/set_up_an_account"
                 android:textColor="#3A3A3A"
-                android:textSize="16sp"/>
+                android:textSize="@dimen/dimen_text_16"/>
         </LinearLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>
 

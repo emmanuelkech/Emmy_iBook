@@ -45,7 +45,7 @@
     <string name="edit_profile">Edit Profile</string>
     <string name="sign_out">Sign Out</string>
     <string name="edit">Edit</string>
-    <string name="categorisatio_heading_text">All Categories</string>
+    <string name="categorisation_heading_text">All Categories</string>
     <string name="all">All</string>
     <string name="biography">Biography</string>
     <string name="business">Business</string>
@@ -77,4 +77,5 @@
     <string name="profile_details">Profile Details</string>
     <string name="search">Search</string>
     <string name="view_profile">View Profile</string>
+    <string name="abie_pepple">Abie Pepple</string>
 </resources>

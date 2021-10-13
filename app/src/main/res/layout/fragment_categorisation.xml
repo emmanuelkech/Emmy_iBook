@@ -28,7 +28,7 @@
             android:layout_marginTop="20dp"
             android:fontFamily="@font/sf_pro_rounded_regular"
             android:text="@string/categorisatio_heading_text"
-            android:textSize="20sp"
+            android:textSize="@dimen/dimen_text_20"
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="@id/search_bar"
             app:layout_constraintTop_toBottomOf="@id/search_bar" />
