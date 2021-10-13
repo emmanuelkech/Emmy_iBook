@@ -6,18 +6,16 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.OrientationHelper
 import androidx.recyclerview.widget.RecyclerView
-import com.example.emmy_ibook.R
 import com.example.emmy_ibook.data.BestReadsSource
 import com.example.emmy_ibook.data.ExploreCategoriesSource
 import com.example.emmy_ibook.databinding.FragmentHomeBinding
-import com.example.emmy_ibook.databinding.FragmentProceedPageBinding
 
 class HomeFragment : Fragment() {
 
     private var _binding: FragmentHomeBinding? = null
     private val binding get() = _binding!!
+
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,

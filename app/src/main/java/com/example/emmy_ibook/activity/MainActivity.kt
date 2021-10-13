@@ -20,7 +20,7 @@ class MainActivity : AppCompatActivity() {
     private var homeFragment = HomeFragment()
     private lateinit var bottomNavBar : BottomNavigationView
     private lateinit var appBarConfiguration: AppBarConfiguration
-git 
+
 
 
     private lateinit var binding: ActivityHomeScreenBinding
@@ -48,10 +48,7 @@ git
     }
 
 
-    /*private fun setCurrentFragment(fragment: Fragment){
-        supportFragmentManager.beginTransaction().apply {
-            replace(R.id.fragment_container, fragment)
-            commit()
-        }
-    }*/
+
+    
+
 }
