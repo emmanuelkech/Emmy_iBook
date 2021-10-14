@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.Search"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="45dp"
+        android:fontFamily="@font/sf_pro_rounded_regular"
+        android:text="@string/search"
+        android:textColor="@color/search"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/searchResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginTop="28.5dp"
+        android:fontFamily="@font/sf_pro_rounded_regular"
+        android:text="@string/_1_result_found"
+        android:textColor="@color/searchResult"
+        android:textSize="12sp"
+        android:layout_marginEnd="49dp"
+        android:textStyle="normal"/>
+
+    <SearchView
+        android:id="@+id/searchView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginTop="4.5dp"
+        android:layout_marginEnd="49dp"
+        android:layout_marginStart="49dp"
+        android:queryHint="Search for a book"
+        android:iconifiedByDefault="false"
+        android:background="@drawable/searchview_background"
+        android:queryBackground="@android:color/transparent"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="49dp"
+        android:layout_marginStart="49dp"/>
+
+
+</LinearLayout>

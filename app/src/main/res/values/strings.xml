@@ -64,6 +64,11 @@
     <string name="best_reads">Best Reads</string>
     <string name="explore_categories">Explore Categories</string>
     <string name="more">More</string>
+
+    <string name="search">Search</string>
+    <string name="_1_result_found">1 result found</string>
+
+
     <string name="menu_search">Search</string>
     <string name="back_arrow">back arrow</string>
     <string name="donate_a_book">Donate a Book</string>
