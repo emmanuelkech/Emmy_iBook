@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.BookDetailsFragment">
+
+    <LinearLayout
+        android:layout_marginVertical="20dp"
+        android:id="@+id/linearLayoutBookDetailsHeader"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Book Details"
+            android:textStyle="bold"
+            android:textSize="20sp"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linearLayoutBookDetails"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginHorizontal="40dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/linearLayoutBookDetailsHeader">
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="-75dp">
+
+            <ImageView
+                android:layout_width="109dp"
+                android:layout_height="161dp"
+                android:layout_gravity="center"
+                android:alpha=".1"
+                android:src="@drawable/book_image" />
+
+            <ImageView
+                android:layout_width="153dp"
+                android:layout_height="227dp"
+                android:layout_gravity="center"
+                android:src="@drawable/frame_imageview_book_detail" />
+
+        </FrameLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp">
+
+                <ImageView
+                    android:layout_width="153dp"
+                    android:layout_height="227dp"
+                    android:src="@drawable/book_image" />
+
+                <ImageView
+                    android:layout_width="153dp"
+                    android:layout_height="227dp"
+                    android:src="@drawable/frame_imageview_book_detail" />
+
+            </FrameLayout>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="-70dp">
+
+                <ImageView
+                    android:layout_width="109dp"
+                    android:layout_height="161dp"
+                    android:layout_gravity="center"
+                    android:alpha=".1"
+                    android:src="@drawable/book_image" />
+
+                <ImageView
+                    android:layout_width="153dp"
+                    android:layout_height="227dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/frame_imageview_book_detail" />
+
+            </FrameLayout>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginBottom="73dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sf_pro_rounded_regular"
+            android:text="Title"
+            android:textColor="#8E8E8E"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="@font/sf_pro_rounded_regular"
+            android:text="Nineteen Eighty-Four"
+            android:textColor="#3A3A3A"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sf_pro_rounded_regular"
+            android:text="Author"
+            android:textColor="#8E8E8E"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="@font/sf_pro_rounded_regular"
+            android:text="Thompson, Reginald"
+            android:textColor="#3A3A3A"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sf_pro_rounded_regular"
+            android:text="@string/title_language"
+            android:textColor="#8E8E8E"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="@font/sf_pro_rounded_regular"
+            android:text="EN"
+            android:textColor="#3A3A3A"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sf_pro_rounded_regular"
+            android:text="@string/title_pages"
+            android:textColor="#8E8E8E"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="@font/sf_pro_rounded_regular"
+            android:text="320"
+            android:textColor="#3A3A3A"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sf_pro_rounded_regular"
+            android:text="@string/title_description"
+            android:textColor="#8E8E8E"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sf_pro_rounded_regular"
+            android:text="@string/book_description"
+            android:textColor="#3A3A3A"
+            android:textSize="16sp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="316dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"
+            android:text="Download"
+            android:textAllCaps="false"
+
+            />
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
