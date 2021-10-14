@@ -49,8 +49,8 @@
 
         <com.google.android.material.textview.MaterialTextView
             android:id="@+id/textView2"
-            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
             android:layout_marginTop="5dp"
             android:text="@string/sign_in"
             android:textSize="20sp"
