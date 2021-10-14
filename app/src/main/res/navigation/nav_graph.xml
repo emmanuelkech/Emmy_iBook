@@ -93,4 +93,9 @@
         android:name="com.example.emmy_ibook.fragments.Categorisation"
         android:label="fragment_categorisation"
         tools:layout="@layout/fragment_categorisation" />
+    <fragment
+        android:id="@+id/addNewBook"
+        android:name="com.example.emmy_ibook.fragments.AddNewBook"
+        android:label="fragment_add_new_book"
+        tools:layout="@layout/fragment_add_new_book" />
 </navigation>
