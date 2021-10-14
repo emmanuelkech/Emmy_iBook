@@ -57,9 +57,29 @@
         android:label="fragment_proceed_page"
         tools:layout="@layout/fragment_proceed_page" >
         <action
-            android:id="@+id/action_proceedPage_to_signinPage"
+            android:id="@+id/action_proceedPage_to_homeScreen"
+            app:destination="@id/homeScreen" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileFragment2"
+        android:name="com.example.emmy_ibook.fragments.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/action_profileFragment2_to_signinPage"
             app:destination="@id/signinPage" />
         <action
+            android:id="@+id/action_profileFragment2_to_editProfileFragment2"
+            app:destination="@id/editProfileFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/editProfileFragment2"
+        android:name="com.example.emmy_ibook.fragments.EditProfileFragment"
+        android:label="fragment_edit_profile"
+        tools:layout="@layout/fragment_edit_profile" >
+        <action
+            android:id="@+id/action_editProfileFragment2_to_profileFragment2"
+            app:destination="@id/profileFragment2" />
             android:id="@+id/action_proceedPage_to_homeScreen"
             app:destination="@id/homeScreen" />
     </fragment>
@@ -73,4 +93,9 @@
         android:name="com.example.emmy_ibook.fragments.Categorisation"
         android:label="fragment_categorisation"
         tools:layout="@layout/fragment_categorisation" />
+    <fragment
+        android:id="@+id/addNewBook"
+        android:name="com.example.emmy_ibook.fragments.AddNewBook"
+        android:label="fragment_add_new_book"
+        tools:layout="@layout/fragment_add_new_book" />
 </navigation>

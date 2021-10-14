@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="categorisatio_heading_text">All Categories</string>
+    <string name="book_description">This is a wonderful book to read. I swear if you read this book you will never read another book again in your life. It began with a story and also ended with a story.</string>
+    <string name="title_pages">Pages</string>
+    <string name="title_description">Description</string>
+    <string name="title_language">Language</string>
+    <string name="download_dialog">Your downloaded books are stored in your bookshelf for ease of use and accesibility.</string>
+    <string name="categorisation_heading_text">All Categories</string>
     <string name="all">All</string>
     <string name="biography">Biography</string>
     <string name="business">Business</string>
