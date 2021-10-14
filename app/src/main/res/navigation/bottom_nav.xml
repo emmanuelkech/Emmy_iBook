@@ -9,7 +9,11 @@
         android:id="@+id/homeFragment"
         android:name="com.example.emmy_ibook.fragments.HomeFragment"
         android:label="fragment_home"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_bookshelfPage"
+            app:destination="@id/bookshelfPage" />
+    </fragment>
     <fragment
         android:id="@+id/bookshelfPage"
         android:name="com.example.emmy_ibook.fragments.BookshelfPage"
