@@ -5,5 +5,15 @@
     <string name="title_description">Description</string>
     <string name="title_language">Language</string>
     <string name="download_dialog">Your downloaded books are stored in your bookshelf for ease of use and accesibility.</string>
-
+    <string name="categorisation_heading_text">All Categories</string>
+    <string name="all">All</string>
+    <string name="biography">Biography</string>
+    <string name="business">Business</string>
+    <string name="children">Children</string>
+    <string name="classics">Classics</string>
+    <string name="comics">Comics</string>
+    <string name="cookbook">Cookbook</string>
+    <string name="ebook">Ebook</string>
+    <string name="fantasy">Fantasy</string>
+    <string name="fiction">Fiction</string>
 </resources>
