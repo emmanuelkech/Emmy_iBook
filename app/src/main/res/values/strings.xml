@@ -39,6 +39,11 @@
     <string name="create_a_username">Create a username</string>
     <string name="provide_your_last_name">Provide your last name</string>
     <string name="provide_your_first_name">Provide your first name</string>
+    <string name="book_description">This is a wonderful book to read. I swear if you read this book you will never read another book again in your life. It began with a story and also ended with a story.</string>
+    <string name="title_description">Description</string>
+    <string name="title_pages">Pages</string>
+    <string name="title_language">Language</string>
+    <string name="download_dialog">Your downloaded books are stored in your bookshelf for ease of use and accesibility.</string>
     <string name="categorisation_heading_text">All Categories</string>
     <string name="save">Save</string>
     <string name="email">Email</string>
