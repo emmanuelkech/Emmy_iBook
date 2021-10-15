@@ -43,4 +43,6 @@
     <dimen name="dimen_70">70dp</dimen>
     <dimen name="dimen_2_5">2.5dp</dimen>
     <dimen name="dimen_48">48dp</dimen>
+    <dimen name="nav_header_height">100dp</dimen>
+    <dimen name="navigation_drawer_width">260dp</dimen>
 </resources>

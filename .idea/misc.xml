@@ -3,25 +3,13 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-<<<<<<< HEAD
-        <entry key="..\:/Users/ADEYINKA/AndroidStudioProjects/Emmy_iBook/app/src/main/res/drawable-v24/ic_baseline_book_24.xml" value="0.10520833333333333" />
-        <entry key="..\:/Users/ADEYINKA/AndroidStudioProjects/Emmy_iBook/app/src/main/res/drawable-v24/ic_bookshelf.xml" value="0.10520833333333333" />
-        <entry key="..\:/Users/ADEYINKA/AndroidStudioProjects/Emmy_iBook/app/src/main/res/drawable-v24/ic_home.xml" value="0.2703125" />
-        <entry key="..\:/Users/ADEYINKA/AndroidStudioProjects/Emmy_iBook/app/src/main/res/drawable-v24/ic_notifications.xml" value="0.10520833333333333" />
-        <entry key="..\:/Users/ADEYINKA/AndroidStudioProjects/Emmy_iBook/app/src/main/res/drawable/ic_home.xml" value="0.2703125" />
-        <entry key="..\:/Users/ADEYINKA/AndroidStudioProjects/Emmy_iBook/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2703125" />
-        <entry key="..\:/Users/ADEYINKA/AndroidStudioProjects/Emmy_iBook/app/src/main/res/drawable/searchview_background.xml" value="0.2703125" />
-        <entry key="..\:/Users/ADEYINKA/AndroidStudioProjects/Emmy_iBook/app/src/main/res/layout/activity_book_shelf.xml" value="0.2" />
-        <entry key="..\:/Users/ADEYINKA/AndroidStudioProjects/Emmy_iBook/app/src/main/res/layout/activity_home_screen.xml" value="0.264" />
-        <entry key="..\:/Users/ADEYINKA/AndroidStudioProjects/Emmy_iBook/app/src/main/res/layout/activity_main.xml" value="0.1453125" />
-        <entry key="..\:/Users/ADEYINKA/AndroidStudioProjects/Emmy_iBook/app/src/main/res/layout/fragment_book_shelf.xml" value="0.13020833333333334" />
-        <entry key="..\:/Users/ADEYINKA/AndroidStudioProjects/Emmy_iBook/app/src/main/res/layout/fragment_bookshelf_page.xml" value="0.264" />
-        <entry key="..\:/Users/ADEYINKA/AndroidStudioProjects/Emmy_iBook/app/src/main/res/layout/fragment_categorisation.xml" value="0.13020833333333334" />
-        <entry key="..\:/Users/ADEYINKA/AndroidStudioProjects/Emmy_iBook/app/src/main/res/layout/fragment_donate.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/ADEYINKA/AndroidStudioProjects/Emmy_iBook/app/src/main/res/layout/fragment_home.xml" value="0.1453125" />
-        <entry key="..\:/Users/ADEYINKA/AndroidStudioProjects/Emmy_iBook/app/src/main/res/menu/bottom_navigation_menu.xml" value="0.4" />
-=======
->>>>>>> a26adcedfbbb98ebc46a52db791a157a9e127418
+        <entry key="..\:/Users/ChibuFirst/AndroidStudioProjects/Emmy_iBook/app/src/main/res/drawable/drawer_background.xml" value="0.2169230769230769" />
+        <entry key="..\:/Users/ChibuFirst/AndroidStudioProjects/Emmy_iBook/app/src/main/res/drawable/ic_menu.xml" value="0.2169230769230769" />
+        <entry key="..\:/Users/ChibuFirst/AndroidStudioProjects/Emmy_iBook/app/src/main/res/layout/activity_home_screen.xml" value="0.20427305888483585" />
+        <entry key="..\:/Users/ChibuFirst/AndroidStudioProjects/Emmy_iBook/app/src/main/res/layout/activity_main.xml" value="0.1814814814814815" />
+        <entry key="..\:/Users/ChibuFirst/AndroidStudioProjects/Emmy_iBook/app/src/main/res/layout/drawer_header.xml" value="0.1814814814814815" />
+        <entry key="..\:/Users/ChibuFirst/AndroidStudioProjects/Emmy_iBook/app/src/main/res/layout/fragment_home.xml" value="0.1814814814814815" />
+        <entry key="..\:/Users/ChibuFirst/AndroidStudioProjects/Emmy_iBook/app/src/main/res/layout/row_nav_drawer.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/Emmanuel Ikechukwu/AndroidStudioProjects/Emmy_iBook/app/src/main/res/drawable/layout_bg.xml" value="0.265625" />
         <entry key="..\:/Users/Emmanuel Ikechukwu/AndroidStudioProjects/Emmy_iBook/app/src/main/res/layout/activity_home_screen.xml" value="0.23822463768115942" />
         <entry key="..\:/Users/Emmanuel Ikechukwu/AndroidStudioProjects/Emmy_iBook/app/src/main/res/layout/activity_main.xml" value="0.17391304347826086" />
@@ -38,14 +26,14 @@
         <entry key="..\:/Users/Emmanuel Ikechukwu/AndroidStudioProjects/Emmy_iBook/app/src/main/res/layout/fragment_splash_screen.xml" value="0.17391304347826086" />
         <entry key="..\:/Users/Emmanuel Ikechukwu/AndroidStudioProjects/Emmy_iBook/app/src/main/res/layout/screen_splash.xml" value="0.22327898550724637" />
         <entry key="..\:/Users/Emmanuel Ikechukwu/AndroidStudioProjects/Emmy_iBook/app/src/main/res/menu/menu.xml" value="0.24947916666666667" />
-        <entry key="..\:/Users/USER/AndroidStudioProjects/ibook/app/src/main/res/drawable-v24/back.xml" value="0.23854166666666668" />
-        <entry key="..\:/Users/USER/AndroidStudioProjects/ibook/app/src/main/res/drawable/button_bg.xml" value="0.23854166666666668" />
-        <entry key="..\:/Users/USER/AndroidStudioProjects/ibook/app/src/main/res/drawable/layout_bg.xml" value="0.23854166666666668" />
-        <entry key="..\:/Users/USER/AndroidStudioProjects/ibook/app/src/main/res/layout/fragment_add_new_book.xml" value="0.22" />
+        <entry key="..\:/Users/Mohbeauty/AndroidStudioProjects/Emmy_iBook/app/src/main/res/layout/fragment_categorisation.xml" value="0.11594202898550725" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/Emmy_iBook/app/src/main/res/layout/activity_home_screen.xml" value="0.22" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/Emmy_iBook/app/src/main/res/layout/fragment_home.xml" value="0.1" />
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="11" project-jdk-type="JavaSDK">
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">

@@ -64,6 +64,11 @@
     <string name="best_reads">Best Reads</string>
     <string name="explore_categories">Explore Categories</string>
     <string name="more">More</string>
+
+    <string name="search">Search</string>
+    <string name="_1_result_found">1 result found</string>
+
+
     <string name="menu_search">Search</string>
     <string name="back_arrow">back arrow</string>
     <string name="donate_a_book">Donate a Book</string>
@@ -81,7 +86,6 @@
     <string name="_10_00am">10:00am</string>
     <string name="complete">Complete</string>
     <string name="profile_details">Profile Details</string>
-    <string name="search">Search</string>
     <string name="view_profile">View Profile</string>
     <string name="read_text">Read</string>
     <string name="desc_text">A Portrait of the Artist as a Young Man</string>

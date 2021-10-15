@@ -1,5 +1,6 @@
 package com.example.emmy_ibook.model
 
+import android.widget.ImageView
 import androidx.annotation.DrawableRes
 import androidx.annotation.StringRes
 
