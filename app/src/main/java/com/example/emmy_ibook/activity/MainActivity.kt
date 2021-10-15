@@ -1,5 +1,6 @@
 package com.example.emmy_ibook.activity
 
+import android.content.Intent
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
@@ -53,6 +54,10 @@ class MainActivity : AppCompatActivity() {
             navController.navigate(R.id.search)
             updateAdapter(3)
         }
+        binding.signOutButton.setOnClickListener {
+            startActivity(Intent(this, AuthenticationActivity::class.java))
+            finish()
+        }
 
         // Setup Recyclerview's Layout
         binding.navigationRv.layoutManager = LinearLayoutManager(this)
@@ -69,7 +74,7 @@ class MainActivity : AppCompatActivity() {
                         when (position) {
                             0 -> {
                                 // # Donate a book
-                                navController.navigate(R.id.home)
+                                navController.navigate(R.id.donate)
                             }
                             1 -> {
                                 // # Explore Categories
