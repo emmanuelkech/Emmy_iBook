@@ -31,6 +31,8 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home_screen)
 
+        createHomeFragment()
+
         bottom_navigation.setOnNavigationItemSelectedListener(mOnNavigationItemReselectedListener)
     }
     fun createHomeFragment() {
