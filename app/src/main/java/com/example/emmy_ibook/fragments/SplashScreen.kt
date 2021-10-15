@@ -7,6 +7,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.NavController
 import androidx.navigation.fragment.NavHostFragment
 import com.example.emmy_ibook.R
@@ -32,8 +33,13 @@ class SplashScreen : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         val bundle = Bundle()
         Handler().postDelayed({
-            navCon.navigate(R.id.action_splashScreen_to_onboardingPage, bundle)
+            navCon.navigate(R.id.action_splashScreen2_to_homeFragment, bundle)
         },2000)
 
+    }
+
+    override fun onDestroyView() {
+        super.onDestroyView()
+        (activity as AppCompatActivity?)!!.supportActionBar!!.show()
     }
 }
