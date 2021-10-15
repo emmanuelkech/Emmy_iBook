@@ -111,4 +111,6 @@
     <string name="add">Add</string>
     <string name="upload_cover_photo_image_description">click here to your book\'s cover photo</string>
     <string name="donate_hard_copy">Donate Hard Copy</string>
+    <string name="success_text">Thank you for donating this precious jewel, we\'d be sure to notify our readers.</string>
+    <string name="success_button">Proceed to Homepage</string>
 </resources>
