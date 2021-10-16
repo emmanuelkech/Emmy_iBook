@@ -69,7 +69,7 @@ class MainActivity : AppCompatActivity() {
                         when (position) {
                             0 -> {
                                 // # Donate a book
-                                navController.navigate(R.id.home)
+                                navController.navigate(R.id.donate)
                             }
                             1 -> {
                                 // # Explore Categories
