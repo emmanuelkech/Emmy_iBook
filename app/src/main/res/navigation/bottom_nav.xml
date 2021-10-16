@@ -12,10 +12,14 @@
         tools:layout="@layout/fragment_home" >
         <action
             android:id="@+id/action_homeFragment_to_bookshelfPage"
+<<<<<<< HEAD
             app:destination="@id/bookshelfPage"
             app:launchSingleTop="true"
             app:popUpTo="@id/splashScreen2"
             app:popUpToInclusive="true"/>
+=======
+            app:destination="@id/bookshelfPage" />
+>>>>>>> 4eb2288c91575cd566994daf86a12f0fc0c878f4
     </fragment>
     <fragment
         android:id="@+id/bookshelfPage"
