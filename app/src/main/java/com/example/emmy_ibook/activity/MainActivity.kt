@@ -1,11 +1,13 @@
 package com.example.emmy_ibook.activity
 
+import android.content.Intent
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.GravityCompat
+import androidx.fragment.app.Fragment
 import androidx.navigation.findNavController
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.AppBarConfiguration
@@ -17,6 +19,8 @@ import com.example.emmy_ibook.adapter.ClickListener
 import com.example.emmy_ibook.adapter.NavigationRvAdapter
 import com.example.emmy_ibook.adapter.RecyclerTouchListener
 import com.example.emmy_ibook.databinding.ActivityHomeScreenBinding
+import com.example.emmy_ibook.fragments.DonateFragment
+import com.example.emmy_ibook.fragments.HomeFragment
 import com.example.emmy_ibook.model.NavigationItemModel
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
@@ -38,8 +42,17 @@ class MainActivity : AppCompatActivity() {
         val navController = navHostFragment.navController
         appBarConfiguration = AppBarConfiguration(navController.graph)
 
+        //Access fragments upon clicking bottom navigation items
         bottomNavBar = binding.bottomNavigation
-        bottomNavBar.setupWithNavController(navController)
+        val homeFragment = HomeFragment()
+
+        setCurrentFragment(homeFragment)
+        bottomNavBar.setOnNavigationItemSelectedListener {
+            when(it.itemId){
+                R.id.ic_home -> setCurrentFragment(homeFragment)
+            }
+            true
+        }
 
         items = arrayListOf(
             NavigationItemModel(getString(R.string.donate_a_book)),
@@ -52,6 +65,10 @@ class MainActivity : AppCompatActivity() {
         binding.searchImage.setOnClickListener {
             navController.navigate(R.id.search)
             updateAdapter(3)
+        }
+        binding.signOutButton.setOnClickListener {
+            startActivity(Intent(this, AuthenticationActivity::class.java))
+            finish()
         }
 
         // Setup Recyclerview's Layout
@@ -97,6 +114,14 @@ class MainActivity : AppCompatActivity() {
                     }
                 })
         )
+    }
+
+    //Private function for hanging up fragments
+    private fun setCurrentFragment(fragment: Fragment){
+        supportFragmentManager.beginTransaction().apply {
+            replace(R.id.fragment_container, fragment)
+            commit()
+        }
     }
 
     private fun updateAdapter(highlightItemPos: Int) {

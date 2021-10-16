@@ -111,4 +111,7 @@
     <string name="add">Add</string>
     <string name="upload_cover_photo_image_description">click here to your book\'s cover photo</string>
     <string name="donate_hard_copy">Donate Hard Copy</string>
+    <string name="abie_pepple_nav_name">\@abie_pepple</string>
+    <string name="reginald_pepple_nav_head">Reginald Pepple</string>
+    <string name="sign_out_nav">Sign out</string>
 </resources>
