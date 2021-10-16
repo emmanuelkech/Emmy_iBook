@@ -86,7 +86,7 @@ class MainActivity : AppCompatActivity() {
                         when (position) {
                             0 -> {
                                 // # Donate a book
-                                navController.navigate(R.id.donate)
+                                navController.navigate(R.id.addNewBook2)
                             }
 
                             1 -> {
