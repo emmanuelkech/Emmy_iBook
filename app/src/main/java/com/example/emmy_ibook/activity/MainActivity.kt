@@ -7,6 +7,7 @@ import android.os.Looper
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.GravityCompat
+import androidx.fragment.app.Fragment
 import androidx.navigation.findNavController
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.AppBarConfiguration
@@ -18,6 +19,8 @@ import com.example.emmy_ibook.adapter.ClickListener
 import com.example.emmy_ibook.adapter.NavigationRvAdapter
 import com.example.emmy_ibook.adapter.RecyclerTouchListener
 import com.example.emmy_ibook.databinding.ActivityHomeScreenBinding
+import com.example.emmy_ibook.fragments.DonateFragment
+import com.example.emmy_ibook.fragments.HomeFragment
 import com.example.emmy_ibook.model.NavigationItemModel
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
@@ -39,8 +42,17 @@ class MainActivity : AppCompatActivity() {
         val navController = navHostFragment.navController
         appBarConfiguration = AppBarConfiguration(navController.graph)
 
+        //Access fragments upon clicking bottom navigation items
         bottomNavBar = binding.bottomNavigation
-        bottomNavBar.setupWithNavController(navController)
+        val homeFragment = HomeFragment()
+
+        setCurrentFragment(homeFragment)
+        bottomNavBar.setOnNavigationItemSelectedListener {
+            when(it.itemId){
+                R.id.ic_home -> setCurrentFragment(homeFragment)
+            }
+            true
+        }
 
         items = arrayListOf(
             NavigationItemModel(getString(R.string.donate_a_book)),
@@ -76,14 +88,17 @@ class MainActivity : AppCompatActivity() {
                                 // # Donate a book
                                 navController.navigate(R.id.addNewBook2)
                             }
+
                             1 -> {
                                 // # Explore Categories
                                 navController.navigate(R.id.categories)
                             }
+
                             2 -> {
                                 // # Profile Details
                                 navController.navigate(R.id.profile)
                             }
+
                             3 -> {
                                 // # Search
                                 navController.navigate(R.id.search)
@@ -99,6 +114,14 @@ class MainActivity : AppCompatActivity() {
                     }
                 })
         )
+    }
+
+    //Private function for hanging up fragments
+    private fun setCurrentFragment(fragment: Fragment){
+        supportFragmentManager.beginTransaction().apply {
+            replace(R.id.fragment_container, fragment)
+            commit()
+        }
     }
 
     private fun updateAdapter(highlightItemPos: Int) {
