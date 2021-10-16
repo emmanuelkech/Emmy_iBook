@@ -33,13 +33,9 @@ class SplashScreen : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         val bundle = Bundle()
         Handler().postDelayed({
-            navCon.navigate(R.id.action_splashScreen2_to_homeFragment, bundle)
+            navCon.navigate(R.id.action_splashScreen_to_onboardingPage, bundle)
         },2000)
 
     }
 
-    override fun onDestroyView() {
-        super.onDestroyView()
-        (activity as AppCompatActivity?)!!.supportActionBar!!.show()
-    }
 }

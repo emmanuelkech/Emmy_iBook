@@ -3,10 +3,13 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/ADEYINKA/AndroidStudioProjects/Emmy_iBook/app/src/main/res/drawable/ic_bookshelf.xml" value="0.2703125" />
         <entry key="..\:/Users/ADEYINKA/AndroidStudioProjects/Emmy_iBook/app/src/main/res/layout/activity_book_shelf.xml" value="0.25052083333333336" />
-        <entry key="..\:/Users/ADEYINKA/AndroidStudioProjects/Emmy_iBook/app/src/main/res/layout/activity_home_screen.xml" value="0.25052083333333336" />
+        <entry key="..\:/Users/ADEYINKA/AndroidStudioProjects/Emmy_iBook/app/src/main/res/layout/activity_home_screen.xml" value="0.1" />
         <entry key="..\:/Users/ADEYINKA/AndroidStudioProjects/Emmy_iBook/app/src/main/res/layout/activity_main.xml" value="0.25052083333333336" />
+        <entry key="..\:/Users/ADEYINKA/AndroidStudioProjects/Emmy_iBook/app/src/main/res/layout/fragment_bookshelf_page.xml" value="0.4" />
         <entry key="..\:/Users/ADEYINKA/AndroidStudioProjects/Emmy_iBook/app/src/main/res/menu/bottom_navigation_menu.xml" value="0.25052083333333336" />
+        <entry key="..\:/Users/ADEYINKA/AndroidStudioProjects/Emmy_iBook/app/src/main/res/menu/drawer_menu.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Emmanuel Ikechukwu/AndroidStudioProjects/Emmy_iBook/app/src/main/res/drawable/layout_bg.xml" value="0.265625" />
         <entry key="..\:/Users/Emmanuel Ikechukwu/AndroidStudioProjects/Emmy_iBook/app/src/main/res/layout/activity_home_screen.xml" value="0.23822463768115942" />
         <entry key="..\:/Users/Emmanuel Ikechukwu/AndroidStudioProjects/Emmy_iBook/app/src/main/res/layout/activity_main.xml" value="0.17391304347826086" />
