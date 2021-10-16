@@ -71,14 +71,17 @@ class MainActivity : AppCompatActivity() {
                                 // # Donate a book
                                 navController.navigate(R.id.donate)
                             }
+
                             1 -> {
                                 // # Explore Categories
                                 navController.navigate(R.id.categories)
                             }
+
                             2 -> {
                                 // # Profile Details
                                 navController.navigate(R.id.profile)
                             }
+
                             3 -> {
                                 // # Search
                                 navController.navigate(R.id.search)
