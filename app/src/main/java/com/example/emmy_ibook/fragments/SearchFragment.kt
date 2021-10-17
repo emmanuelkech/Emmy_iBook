@@ -5,16 +5,27 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.NavController
+import androidx.navigation.fragment.NavHostFragment
 import com.example.emmy_ibook.R
+import com.example.emmy_ibook.databinding.FragmentCategorisationBinding
+import com.example.emmy_ibook.databinding.FragmentSearchBinding
 
 class SearchFragment : Fragment() {
+
+    private var _binding: FragmentSearchBinding? = null
+    private val binding get() = _binding!!
+    private lateinit var navCon: NavController
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_search, container, false)
+        _binding = FragmentSearchBinding.inflate(inflater, container, false)
+        navCon = NavHostFragment.findNavController(this)
+        return binding.root
+
     }
 
 }
