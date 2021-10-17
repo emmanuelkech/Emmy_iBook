@@ -8,7 +8,11 @@
         android:id="@+id/home"
         android:name="com.example.emmy_ibook.fragments.HomeFragment"
         android:label="fragment_home"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_home_to_addNewBook2"
+            app:destination="@id/addNewBook2" />
+    </fragment>
     <fragment
         android:id="@+id/categories"
         android:name="com.example.emmy_ibook.fragments.Categorisation"
@@ -29,4 +33,25 @@
         android:name="com.example.emmy_ibook.fragments.SearchFragment"
         android:label="fragment_search"
         tools:layout="@layout/fragment_search" />
+    <fragment
+        android:id="@+id/addNewBook2"
+        android:name="com.example.emmy_ibook.fragments.AddNewBook"
+        android:label="fragment_add_new_book"
+        tools:layout="@layout/fragment_add_new_book" >
+        <action
+            android:id="@+id/action_addNewBook2_to_donate"
+            app:destination="@id/donate" />
+        <action
+            android:id="@+id/action_addNewBook2_to_successScreen2"
+            app:destination="@id/successScreen2" />
+    </fragment>
+    <fragment
+        android:id="@+id/successScreen2"
+        android:name="com.example.emmy_ibook.fragments.SuccessScreen"
+        android:label="fragment_success_screen"
+        tools:layout="@layout/fragment_success_screen" >
+        <action
+            android:id="@+id/action_successScreen2_to_home"
+            app:destination="@id/home" />
+    </fragment>
 </navigation>

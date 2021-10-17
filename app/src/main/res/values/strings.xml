@@ -85,7 +85,6 @@
     <string name="_10_00am">10:00am</string>
     <string name="complete">Complete</string>
     <string name="profile_details">Profile Details</string>
-    <string name="search">Search</string>
     <string name="view_profile">View Profile</string>
     <string name="read_text">Read</string>
     <string name="desc_text">A Portrait of the Artist as a Young Man</string>
@@ -111,4 +110,9 @@
     <string name="add">Add</string>
     <string name="upload_cover_photo_image_description">click here to your book\'s cover photo</string>
     <string name="donate_hard_copy">Donate Hard Copy</string>
+    <string name="success_text">Thank you for donating this precious jewel, we\'d be sure to notify our readers.</string>
+    <string name="success_button">Proceed to Homepage</string>
+    <string name="abie_pepple_nav_name">\@abie_pepple</string>
+    <string name="reginald_pepple_nav_head">Reginald Pepple</string>
+    <string name="sign_out_nav">Sign out</string>
 </resources>
