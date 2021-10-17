@@ -39,6 +39,11 @@
     <string name="create_a_username">Create a username</string>
     <string name="provide_your_last_name">Provide your last name</string>
     <string name="provide_your_first_name">Provide your first name</string>
+    <string name="book_description">This is a wonderful book to read. I swear if you read this book you will never read another book again in your life. It began with a story and also ended with a story.</string>
+    <string name="title_description">Description</string>
+    <string name="title_pages">Pages</string>
+    <string name="title_language">Language</string>
+    <string name="download_dialog">Your downloaded books are stored in your bookshelf for ease of use and accesibility.</string>
     <string name="categorisation_heading_text">All Categories</string>
     <string name="save">Save</string>
     <string name="email">Email</string>
@@ -59,6 +64,11 @@
     <string name="best_reads">Best Reads</string>
     <string name="explore_categories">Explore Categories</string>
     <string name="more">More</string>
+
+    <string name="search">Search</string>
+    <string name="_1_result_found">1 result found</string>
+
+
     <string name="menu_search">Search</string>
     <string name="back_arrow">back arrow</string>
     <string name="donate_a_book">Donate a Book</string>
@@ -76,7 +86,6 @@
     <string name="_10_00am">10:00am</string>
     <string name="complete">Complete</string>
     <string name="profile_details">Profile Details</string>
-    <string name="search">Search</string>
     <string name="view_profile">View Profile</string>
     <string name="read_text">Read</string>
     <string name="desc_text">A Portrait of the Artist as a Young Man</string>
@@ -97,4 +106,14 @@
     <string name="notification_menu">Notification</string>
     <string name="home_menu">Home</string>
     <string name="abie_pepple">Abie Pepple</string>
+    <string name="add_a_new_book">Add a New Book</string>
+    <string name="upload_book_cover">Upload Book Cover Photo</string>
+    <string name="add">Add</string>
+    <string name="upload_cover_photo_image_description">click here to your book\'s cover photo</string>
+    <string name="donate_hard_copy">Donate Hard Copy</string>
+    <string name="success_text">Thank you for donating this precious jewel, we\'d be sure to notify our readers.</string>
+    <string name="success_button">Proceed to Homepage</string>
+    <string name="abie_pepple_nav_name">\@abie_pepple</string>
+    <string name="reginald_pepple_nav_head">Reginald Pepple</string>
+    <string name="sign_out_nav">Sign out</string>
 </resources>

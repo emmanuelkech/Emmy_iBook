@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="8dp"
+        android:layout_gravity="center">
+
+        <LinearLayout
+            android:layout_width="316dp"
+            android:layout_height="251dp"
+            android:orientation="vertical"
+            android:layout_marginTop="40dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Download Successful"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:textColor="#CC000000"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="25dp"
+                android:text="@string/download_dialog"
+                android:textSize="16sp"
+                android:textColor="#959595"
+                android:layout_marginTop="20dp"
+                android:textAlignment="center" />
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="268dp"
+                android:layout_height="50dp"
+                android:text="Proceed to Bookshelf"
+                android:id="@+id/btnConfirmDownload"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"/>
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</FrameLayout>
