@@ -1,6 +1,7 @@
 package com.example.emmy_ibook.activity
 
 
+
 import android.app.SearchManager
 import android.content.Context
 import android.content.Intent
@@ -10,13 +11,25 @@ import android.text.Layout
 import android.view.Menu
 import android.widget.SearchView
 
+
+import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
+import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.NavHostFragment
+import androidx.navigation.ui.AppBarConfiguration
+
 import android.content.Intent
 import android.os.Bundle
+
+import android.view.View
+
 import android.os.Handler
 import android.os.Looper
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.GravityCompat
+
+
 
 import androidx.fragment.app.Fragment
 import androidx.navigation.findNavController
@@ -25,15 +38,37 @@ import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.navigateUp
 import androidx.navigation.ui.setupWithNavController
 import androidx.recyclerview.widget.LinearLayoutManager
+
 import com.example.emmy_ibook.R
 import com.example.emmy_ibook.adapter.ClickListener
 import com.example.emmy_ibook.adapter.NavigationRvAdapter
 import com.example.emmy_ibook.adapter.RecyclerTouchListener
 import com.example.emmy_ibook.databinding.ActivityHomeScreenBinding
+
+import com.example.emmy_ibook.fragments.BookshelfPage
+
 import com.example.emmy_ibook.fragments.DonateFragment
+
 import com.example.emmy_ibook.fragments.HomeFragment
 import com.example.emmy_ibook.model.NavigationItemModel
 import com.google.android.material.bottomnavigation.BottomNavigationView
+
+import androidx.navigation.fragment.NavHostFragment
+import androidx.navigation.findNavController
+import androidx.navigation.ui.AppBarConfiguration
+import androidx.navigation.ui.setupActionBarWithNavController
+import androidx.navigation.ui.setupWithNavController
+import androidx.navigation.ui.navigateUp
+import com.example.emmy_ibook.fragments.BookshelfPage
+
+
+class MainActivity : AppCompatActivity() {
+
+    private val bookshelfPage = BookshelfPage()
+    private var homeFragment = HomeFragment()
+    private var bookshelfPage = BookshelfPage()
+    private lateinit var bottomNavBar : BottomNavigationView
+
 
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.findNavController
@@ -48,6 +83,7 @@ import com.example.emmy_ibook.databinding.ActivitySearchBinding
 class MainActivity : AppCompatActivity() {
 
     private lateinit var bottomNavBar: BottomNavigationView
+
     private lateinit var appBarConfiguration: AppBarConfiguration
     private lateinit var adapter: NavigationRvAdapter
     private lateinit var items: ArrayList<NavigationItemModel>
@@ -58,12 +94,78 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityHomeScreenBinding.inflate(layoutInflater)
-        setContentView(binding.root)
+        setContentView(R.layout.activity_book_shelf)
+
+
+        val navHostFragment = supportFragmentManager.findFragmentById(R.id.fragment_container ) as NavHostFragment
+        val navController = navHostFragment.navController
+        appBarConfiguration = AppBarConfiguration(navController.graph)
+        //setupActionBarWithNavController(navController, appBarConfiguration)
+       // binding.navView.setupWithNavController(navController)
 
         val navHostFragment =
             supportFragmentManager.findFragmentById(R.id.fragment_container) as NavHostFragment
         val navController = navHostFragment.navController
         appBarConfiguration = AppBarConfiguration(navController.graph)
+
+
+        //function to replace fragments
+
+        replaceFragment(homeFragment)
+
+
+        bottomNavBar = binding.bottomNavigation
+        bottomNavBar.setOnNavigationItemSelectedListener {
+
+            when(it.itemId){
+                R.id.ic_home -> replaceFragment(homeFragment)
+                R.id.ic_bookshelf -> replaceFragment(bookshelfPage)
+               // R.id.ic_notification -> replaceFragment(Not)
+            }
+            true
+        }
+
+
+        //setCurrentFragment(homeFragment)
+
+//        navController.addOnDestinationChangedListener { _, destination, _ ->
+//            if (destination.id == R.id.splashScreen2){
+//                binding.bottomNavigation.visibility = View.GONE
+//            } else{
+//                binding.bottomNavigation.visibility = View.VISIBLE
+//            }
+//        }
+//
+//        bottomNavBar.setupWithNavController(navController)
+
+
+        replaceFragment(bookshelfPage)
+
+        bottomNavBar.setOnNavigationItemSelectedListener {
+            when(it.itemId){
+                R.id.ic_home -> replaceFragment(homeFragment)
+                R.id.ic_bookshelf -> replaceFragment(bookshelfPage)
+               // R.id.ic_home -> replaceFragment(notification)
+            }
+            true
+        }
+    }
+
+    private fun replaceFragment(fragment: Fragment){
+        val transaction = supportFragmentManager.beginTransaction()
+        transaction.replace(R.id.content, fragment)
+        transaction.commit()
+    }
+
+
+    }
+
+    private fun replaceFragment(fragment: Fragment){
+
+        val transaction = supportFragmentManager.beginTransaction()
+        transaction.replace(R.id.fragmentContainerView, fragment)
+        transaction.commit()
+    }
 
         //Access fragments upon clicking bottom navigation items
         bottomNavBar = binding.bottomNavigation
@@ -76,6 +178,7 @@ class MainActivity : AppCompatActivity() {
             }
             true
         }
+
 
         items = arrayListOf(
             NavigationItemModel(getString(R.string.donate_a_book)),
@@ -93,6 +196,11 @@ class MainActivity : AppCompatActivity() {
             startActivity(Intent(this, AuthenticationActivity::class.java))
             finish()
         }
+
+
+        bottomNavigationView.setupWithNavController(navControllerBottomNavigationView)
+        val navController = findNavController(R.id.fragmentContainerView)
+        return navController.navigateUp(appBarConfiguration) || super.onSupportNavigateUp()
 
         // Setup Recyclerview's Layout
         binding.navigationRv.layoutManager = LinearLayoutManager(this)
@@ -137,6 +245,7 @@ class MainActivity : AppCompatActivity() {
                     }
                 })
         )
+
     }
 
     //Private function for hanging up fragments
