@@ -7,6 +7,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.NavController
 import androidx.navigation.fragment.NavHostFragment
 import com.example.emmy_ibook.R
@@ -36,4 +37,5 @@ class SplashScreen : Fragment() {
         },2000)
 
     }
+
 }

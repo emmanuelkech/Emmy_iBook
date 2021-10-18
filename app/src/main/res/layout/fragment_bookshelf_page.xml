@@ -62,11 +62,11 @@
 
     <TextView
         android:id="@+id/descText"
-        android:layout_width="@dimen/dimen_220"
+        android:layout_width="220dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/dimen_15"
-        android:layout_marginTop="@dimen/dimen_30"
-        android:layout_marginEnd="@dimen/dimen_55"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="@dimen/dimen_25"
+        android:layout_marginEnd="@dimen/dimen_30"
         android:textSize="@dimen/dimen_15sp"
         android:textAlignment="inherit"
         android:textColor="@color/black"
@@ -116,7 +116,7 @@
         android:src="@drawable/ic_baseline_book_24"
         app:layout_constraintTop_toBottomOf="@id/descText"
         app:layout_constraintStart_toEndOf="@id/bookImg"
-        android:layout_marginStart="@dimen/dimen_15"
+        android:layout_marginStart="30dp"
         android:layout_marginTop="@dimen/dimen_10"
         android:contentDescription="@string/bookmark_icon" />
 
@@ -157,7 +157,7 @@
     <Button
         android:layout_width="@dimen/dimen_70"
         android:layout_height="@dimen/dimen_38"
-        android:layout_marginStart="@dimen/dimen_20"
+        android:layout_marginStart="35dp"
         android:layout_marginTop="@dimen/dimen_28"
         android:text="@string/read_text"
         android:textAllCaps="false"
@@ -166,6 +166,6 @@
         app:layout_constraintTop_toBottomOf="@id/descText"
         tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
 
-   <include layout="@layout/activity_book_shelf"/>
+    <include layout="@layout/activity_book_shelf"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
