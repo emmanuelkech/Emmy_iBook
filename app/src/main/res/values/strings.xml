@@ -111,12 +111,12 @@
     <string name="add">Add</string>
     <string name="upload_cover_photo_image_description">click here to your book\'s cover photo</string>
     <string name="donate_hard_copy">Donate Hard Copy</string>
-<<<<<<< HEAD
+
     <string name="success_text">Thank you for donating this precious jewel, we\'d be sure to notify our readers.</string>
     <string name="success_button">Proceed to Homepage</string>
-=======
+
     <string name="abie_pepple_nav_name">\@abie_pepple</string>
     <string name="reginald_pepple_nav_head">Reginald Pepple</string>
     <string name="sign_out_nav">Sign out</string>
->>>>>>> 418faceabe312fb359388f682acafdb3216c4bbe
+
 </resources>
