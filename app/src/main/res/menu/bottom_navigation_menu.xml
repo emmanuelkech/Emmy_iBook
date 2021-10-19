@@ -11,5 +11,5 @@
 
     <item android:id="@+id/bookshelfPage"
         android:title="@string/books_menu"
-        android:icon="@drawable/bookstacks"/>
+        android:icon="@drawable/ic_bookshelf"/>
 </menu>

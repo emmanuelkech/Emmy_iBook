@@ -16,4 +16,7 @@
     <string name="ebook">Ebook</string>
     <string name="fantasy">Fantasy</string>
     <string name="fiction">Fiction</string>
+    <string name="abie_pepple_nav_name">\@abie_pepple</string>
+    <string name="reginald_pepple_nav_head">Reginald Pepple</string>
+    <string name="sign_out_nav">Sign out</string>
 </resources>

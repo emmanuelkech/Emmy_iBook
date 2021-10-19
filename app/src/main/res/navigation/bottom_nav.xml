@@ -2,21 +2,35 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/bottom_nav"
-    app:startDestination="@id/homeFragment">
+    android:id="@+id/bottom_nav">
 
     <fragment
+<<<<<<< HEAD
+=======
         android:id="@+id/homeFragment"
         android:name="com.example.emmy_ibook.fragments.HomeFragment"
         android:label="fragment_home"
         tools:layout="@layout/fragment_home" >
         <action
             android:id="@+id/action_homeFragment_to_bookshelfPage"
+<<<<<<< HEAD
+            app:destination="@id/bookshelfPage"
+            app:launchSingleTop="true"
+            app:popUpTo="@id/splashScreen2"
+            app:popUpToInclusive="true"/>
+=======
             app:destination="@id/bookshelfPage" />
+>>>>>>> 4eb2288c91575cd566994daf86a12f0fc0c878f4
     </fragment>
     <fragment
+>>>>>>> dev
         android:id="@+id/bookshelfPage"
         android:name="com.example.emmy_ibook.fragments.BookshelfPage"
         android:label="fragment_bookshelf_page"
         tools:layout="@layout/fragment_bookshelf_page" />
+    <fragment
+        android:id="@+id/splashScreen2"
+        android:name="com.example.emmy_ibook.fragments.SplashScreen"
+        android:label="fragment_splash_screen"
+        tools:layout="@layout/fragment_splash_screen" />
 </navigation>
