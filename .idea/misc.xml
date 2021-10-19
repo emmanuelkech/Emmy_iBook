@@ -50,7 +50,6 @@
         <entry key="..\:/Users/Emmanuel Ikechukwu/AndroidStudioProjects/Emmy_iBook/app/src/main/res/layout/fragment_splash_screen.xml" value="0.17391304347826086" />
         <entry key="..\:/Users/Emmanuel Ikechukwu/AndroidStudioProjects/Emmy_iBook/app/src/main/res/layout/screen_splash.xml" value="0.22327898550724637" />
         <entry key="..\:/Users/Emmanuel Ikechukwu/AndroidStudioProjects/Emmy_iBook/app/src/main/res/menu/menu.xml" value="0.24947916666666667" />
-<<<<<<< HEAD
         <entry key="..\:/Users/Mohbeauty/AndroidStudioProjects/Emmy_iBook/app/src/main/res/layout/fragment_categorisation.xml" value="0.11594202898550725" />
         <entry key="..\:/Users/USER/AndroidStudioProjects/iBook_new/app/src/main/res/drawable/button_background.xml" value="0.23854166666666668" />
         <entry key="..\:/Users/USER/AndroidStudioProjects/iBook_new/app/src/main/res/drawable/button_bg.xml" value="0.23854166666666668" />
@@ -58,14 +57,20 @@
         <entry key="..\:/Users/USER/AndroidStudioProjects/iBook_new/app/src/main/res/layout/fragment_add_new_book.xml" value="0.14945652173913043" />
         <entry key="..\:/Users/USER/AndroidStudioProjects/iBook_new/app/src/main/res/layout/fragment_home.xml" value="0.20606884057971014" />
         <entry key="..\:/Users/USER/AndroidStudioProjects/iBook_new/app/src/main/res/layout/fragment_success_screen.xml" value="0.2" />
+        <entry key="..\:/Users/Peace/AndroidStudioProjects/Emmy_iBook/app/src/main/res/drawable-v24/back.xml" value="0.12604166666666666" />
+        <entry key="..\:/Users/Peace/AndroidStudioProjects/Emmy_iBook/app/src/main/res/layout/activity_home_screen.xml" value="0.10989583333333333" />
+        <entry key="..\:/Users/Peace/AndroidStudioProjects/Emmy_iBook/app/src/main/res/layout/activity_main.xml" value="0.10989583333333333" />
+        <entry key="..\:/Users/Peace/AndroidStudioProjects/Emmy_iBook/app/src/main/res/layout/fragment_blank.xml" value="0.10989583333333333" />
+        <entry key="..\:/Users/Peace/AndroidStudioProjects/Emmy_iBook/app/src/main/res/layout/fragment_donate.xml" value="0.25" />
+        <entry key="..\:/Users/Peace/AndroidStudioProjects/Emmy_iBook/app/src/main/res/layout/fragment_signin_page.xml" value="0.2" />
+        <entry key="..\:/Users/Peace/AndroidStudioProjects/Emmy_iBook/app/src/main/res/layout/style.xml" value="0.22447916666666667" />
+        <entry key="..\:/Users/Peace/AndroidStudioProjects/Emmy_iBook/app/src/main/res/menu/menu.xml" value="0.22447916666666667" />
         <entry key="..\:/Users/User/AndroidStudioProjects/Emmy_iBook/app/src/main/res/layout/activity_home_screen.xml" value="0.22" />
         <entry key="..\:/Users/User/AndroidStudioProjects/Emmy_iBook/app/src/main/res/layout/fragment_home.xml" value="0.1" />
-=======
         <entry key="..\:/Users/USER/AndroidStudioProjects/ibook/app/src/main/res/drawable-v24/back.xml" value="0.23854166666666668" />
         <entry key="..\:/Users/USER/AndroidStudioProjects/ibook/app/src/main/res/drawable/button_bg.xml" value="0.23854166666666668" />
         <entry key="..\:/Users/USER/AndroidStudioProjects/ibook/app/src/main/res/drawable/layout_bg.xml" value="0.23854166666666668" />
         <entry key="..\:/Users/USER/AndroidStudioProjects/ibook/app/src/main/res/layout/fragment_add_new_book.xml" value="0.22" />
->>>>>>> 418faceabe312fb359388f682acafdb3216c4bbe
       </map>
     </option>
   </component>
