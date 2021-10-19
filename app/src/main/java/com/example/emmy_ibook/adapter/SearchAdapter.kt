@@ -7,12 +7,8 @@ import android.widget.Filter
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import com.example.emmy_ibook.R
-import com.example.emmy_ibook.databinding.ActivitySearchBinding
-import com.example.emmy_ibook.databinding.BestReadsListBinding
 import com.example.emmy_ibook.databinding.BookListSearchViewBinding
 import com.example.emmy_ibook.model.BookList
-import java.util.*
 import kotlin.collections.ArrayList
 
 class SearchAdapter(private val context : Context, private val bookData : ArrayList<BookList>)

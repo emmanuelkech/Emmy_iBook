@@ -1,23 +1,36 @@
 package com.example.emmy_ibook.activity
 
-<<<<<<< HEAD
+
+
+import android.app.SearchManager
+import android.content.Context
+import android.content.Intent
+import androidx.appcompat.app.AppCompatActivity
+import android.os.Bundle
+import android.text.Layout
+import android.view.Menu
+import android.widget.SearchView
+
+
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.AppBarConfiguration
-=======
+
 import android.content.Intent
 import android.os.Bundle
-<<<<<<< HEAD
+
 import android.view.View
-=======
+
 import android.os.Handler
 import android.os.Looper
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.GravityCompat
->>>>>>> 4eb2288c91575cd566994daf86a12f0fc0c878f4
+
+
+
 import androidx.fragment.app.Fragment
 import androidx.navigation.findNavController
 import androidx.navigation.fragment.NavHostFragment
@@ -25,23 +38,21 @@ import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.navigateUp
 import androidx.navigation.ui.setupWithNavController
 import androidx.recyclerview.widget.LinearLayoutManager
->>>>>>> dev
+
 import com.example.emmy_ibook.R
 import com.example.emmy_ibook.adapter.ClickListener
 import com.example.emmy_ibook.adapter.NavigationRvAdapter
 import com.example.emmy_ibook.adapter.RecyclerTouchListener
 import com.example.emmy_ibook.databinding.ActivityHomeScreenBinding
-<<<<<<< HEAD
+
 import com.example.emmy_ibook.fragments.BookshelfPage
-=======
+
 import com.example.emmy_ibook.fragments.DonateFragment
->>>>>>> dev
+
 import com.example.emmy_ibook.fragments.HomeFragment
 import com.example.emmy_ibook.model.NavigationItemModel
 import com.google.android.material.bottomnavigation.BottomNavigationView
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
+
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
@@ -49,7 +60,7 @@ import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
 import androidx.navigation.ui.navigateUp
 import com.example.emmy_ibook.fragments.BookshelfPage
->>>>>>> dev
+
 
 class MainActivity : AppCompatActivity() {
 
@@ -57,39 +68,51 @@ class MainActivity : AppCompatActivity() {
     private var homeFragment = HomeFragment()
     private var bookshelfPage = BookshelfPage()
     private lateinit var bottomNavBar : BottomNavigationView
-=======
+
+
+import androidx.navigation.fragment.NavHostFragment
+import androidx.navigation.findNavController
+import androidx.navigation.ui.AppBarConfiguration
+import androidx.navigation.ui.setupActionBarWithNavController
+import androidx.navigation.ui.setupWithNavController
+import androidx.navigation.ui.navigateUp
+import com.example.emmy_ibook.databinding.ActivitySearchBinding
+
+
 
 class MainActivity : AppCompatActivity() {
 
     private lateinit var bottomNavBar: BottomNavigationView
->>>>>>> 4eb2288c91575cd566994daf86a12f0fc0c878f4
+
     private lateinit var appBarConfiguration: AppBarConfiguration
     private lateinit var adapter: NavigationRvAdapter
     private lateinit var items: ArrayList<NavigationItemModel>
 
     private lateinit var binding: ActivityHomeScreenBinding
+    
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityHomeScreenBinding.inflate(layoutInflater)
         setContentView(R.layout.activity_book_shelf)
 
-<<<<<<< HEAD
+
         val navHostFragment = supportFragmentManager.findFragmentById(R.id.fragment_container ) as NavHostFragment
         val navController = navHostFragment.navController
         appBarConfiguration = AppBarConfiguration(navController.graph)
         //setupActionBarWithNavController(navController, appBarConfiguration)
        // binding.navView.setupWithNavController(navController)
-=======
+
         val navHostFragment =
             supportFragmentManager.findFragmentById(R.id.fragment_container) as NavHostFragment
         val navController = navHostFragment.navController
         appBarConfiguration = AppBarConfiguration(navController.graph)
 
-<<<<<<< HEAD
+
         //function to replace fragments
 
         replaceFragment(homeFragment)
->>>>>>> dev
+
 
         bottomNavBar = binding.bottomNavigation
         bottomNavBar.setOnNavigationItemSelectedListener {
@@ -115,7 +138,7 @@ class MainActivity : AppCompatActivity() {
 //
 //        bottomNavBar.setupWithNavController(navController)
 
-<<<<<<< HEAD
+
         replaceFragment(bookshelfPage)
 
         bottomNavBar.setOnNavigationItemSelectedListener {
@@ -134,7 +157,7 @@ class MainActivity : AppCompatActivity() {
         transaction.commit()
     }
 
-=======
+
     }
 
     private fun replaceFragment(fragment: Fragment){
@@ -143,7 +166,7 @@ class MainActivity : AppCompatActivity() {
         transaction.replace(R.id.fragmentContainerView, fragment)
         transaction.commit()
     }
-=======
+
         //Access fragments upon clicking bottom navigation items
         bottomNavBar = binding.bottomNavigation
         val homeFragment = HomeFragment()
@@ -155,7 +178,7 @@ class MainActivity : AppCompatActivity() {
             }
             true
         }
->>>>>>> 4eb2288c91575cd566994daf86a12f0fc0c878f4
+
 
         items = arrayListOf(
             NavigationItemModel(getString(R.string.donate_a_book)),
@@ -174,11 +197,11 @@ class MainActivity : AppCompatActivity() {
             finish()
         }
 
-<<<<<<< HEAD
+
         bottomNavigationView.setupWithNavController(navControllerBottomNavigationView)
         val navController = findNavController(R.id.fragmentContainerView)
         return navController.navigateUp(appBarConfiguration) || super.onSupportNavigateUp()
-=======
+
         // Setup Recyclerview's Layout
         binding.navigationRv.layoutManager = LinearLayoutManager(this)
         binding.navigationRv.setHasFixedSize(true)
@@ -222,7 +245,7 @@ class MainActivity : AppCompatActivity() {
                     }
                 })
         )
->>>>>>> 4eb2288c91575cd566994daf86a12f0fc0c878f4
+
     }
 
     //Private function for hanging up fragments
@@ -233,17 +256,32 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
+
+        bottomNavBar.setupWithNavController(navController)
+
+     }
+
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        menuInflater.inflate(R.menu.search_menu, menu)
+
+        val searchManger = getSystemService(Context.SEARCH_SERVICE) as SearchManager
+        (menu?.findItem(R.id.searchMenu)?.actionView as SearchView). apply {
+            setSearchableInfo(searchManger.getSearchableInfo(componentName))
+        }
+
+        return true
+
     private fun updateAdapter(highlightItemPos: Int) {
         adapter = NavigationRvAdapter(items, highlightItemPos)
         binding.navigationRv.adapter = adapter
         adapter.notifyDataSetChanged()
+
     }
 
     override fun onSupportNavigateUp(): Boolean {
         val navController = findNavController(R.id.fragment_container)
         return navController.navigateUp(appBarConfiguration) || super.onSupportNavigateUp()
     }
->>>>>>> dev
 
     override fun onBackPressed() {
         if (binding.drawerLayout.isDrawerOpen(GravityCompat.START)) {
