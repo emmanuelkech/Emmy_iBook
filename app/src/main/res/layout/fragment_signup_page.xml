@@ -12,7 +12,7 @@
         tools:context=".fragments.SignupPage">
 
         <ImageView
-            android:id="@+id/signup_back_img"
+            android:id="@+id/signup_back_imgz"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/signup_img"
@@ -28,13 +28,13 @@
             android:layout_marginTop="@dimen/dimen_10"
             android:importantForAccessibility="no"
             android:src="@drawable/signup_ibook"
-            app:layout_constraintEnd_toEndOf="@id/signup_back_img"
+            app:layout_constraintEnd_toEndOf="@id/signup_back_imgz"
             app:layout_constraintHorizontal_bias="0.149"
-            app:layout_constraintStart_toStartOf="@id/signup_back_img"
-            app:layout_constraintTop_toTopOf="@id/signup_back_img" />
+            app:layout_constraintStart_toStartOf="@id/signup_back_imgz"
+            app:layout_constraintTop_toTopOf="@id/signup_back_imgz" />
 
         <LinearLayout
-            android:id="@+id/info_area"
+            android:id="@+id/info_areas"
             android:layout_width="@dimen/dimen_340"
             android:layout_height="@dimen/dimen_600"
             android:layout_marginTop="@dimen/dimen_70"
@@ -201,7 +201,7 @@
             android:layout_marginBottom="@dimen/dimen_15"
             android:orientation="horizontal"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/info_area"
+            app:layout_constraintTop_toBottomOf="@id/info_areas"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent">
 
