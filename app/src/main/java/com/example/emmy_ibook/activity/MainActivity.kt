@@ -19,7 +19,11 @@ import com.example.emmy_ibook.adapter.RecyclerTouchListener
 import com.example.emmy_ibook.databinding.ActivityHomeScreenBinding
 import com.example.emmy_ibook.model.NavigationItemModel
 import com.google.android.material.bottomnavigation.BottomNavigationView
+import com.example.emmy_ibook.fragments.HomeFragment
+import com.example.emmy_ibook.fragments.NotificationFragment
 
+
+@Suppress("DEPRECATION")
 class MainActivity : AppCompatActivity() {
 
     private lateinit var bottomNavBar: BottomNavigationView
@@ -28,6 +32,22 @@ class MainActivity : AppCompatActivity() {
     private lateinit var items: ArrayList<NavigationItemModel>
 
     private lateinit var binding: ActivityHomeScreenBinding
+
+
+    private val mOnNavigationItemReselectedListener =
+        BottomNavigationView.OnNavigationItemSelectedListener { item ->
+            when (item.itemId) {
+
+                R.id.ic_notification -> {
+                    createNotificationFragment()
+                    return@OnNavigationItemSelectedListener true
+                }
+
+            }
+            false
+        }
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityHomeScreenBinding.inflate(layoutInflater)
@@ -113,5 +133,25 @@ class MainActivity : AppCompatActivity() {
         } else {
             super.onBackPressed()
         }
+        //create default fragment
+        createHomeFragment()
+
+        bottomNavBar.setOnNavigationItemSelectedListener(mOnNavigationItemReselectedListener)
+    }
+
+    private fun createHomeFragment() {
+        val transaction = supportFragmentManager.beginTransaction()
+        val frag = HomeFragment()
+        transaction.replace(R.id.fragment_container, frag)
+        transaction.addToBackStack(null)
+        transaction.commit()
+    }
+
+    private fun createNotificationFragment() {
+        val transaction = supportFragmentManager.beginTransaction()
+        val frag = NotificationFragment()
+        transaction.replace(R.id.fragment_container, frag)
+        transaction.addToBackStack(null)
+        transaction.commit()
     }
 }
